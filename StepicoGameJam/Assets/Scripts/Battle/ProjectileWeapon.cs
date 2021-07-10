@@ -10,8 +10,8 @@ public class ProjectileWeapon : MonoBehaviour {
 	[Space]
 	[SerializeField] int maxBufferedAttacks = 2;
 	[Space]
-	[SerializeField] Vector3 startSize = new Vector3(0.1f, 0.1f, 1.0f);
-	[SerializeField] Vector3 endSize = new Vector3(1f, 1f, 1.0f);
+	[SerializeField] float startSize = 0.33f;
+	[SerializeField] float endSize = 1.0f;
 
 	[Header("Values - bullet")]
 	[SerializeField] float damage = 25;
@@ -40,7 +40,7 @@ public class ProjectileWeapon : MonoBehaviour {
 		currTimer += Time.deltaTime;
 
 		if (currProjectile != null) {
-			currProjectile.transform.localScale = Vector3.Lerp(startSize, endSize, currTimer / startupTime);
+			currProjectile.transform.localScale = Vector3.one * LeanTween.easeOutBack(startSize, endSize, Mathf.Clamp01(currTimer / startupTime));
 
 			if (currTimer >= startupTime) {
 				currTimer -= startupTime;
@@ -56,11 +56,11 @@ public class ProjectileWeapon : MonoBehaviour {
 		}
 		else if(isAttacking || currBufferedAttacks != 0) {
 			if (currTimer >= cooldownTime) {
-				currTimer -= cooldownTime;
+				currTimer = 0;
 				currProjectile = Instantiate(projectilePrefab, bulletSpawnPos.position, transform.localRotation, bulletSpawnPos).GetComponent<Projectile>();
 				currProjectile.transform.localEulerAngles = Vector3.zero;
 
-				currProjectile.transform.localScale = startSize;
+				currProjectile.transform.localScale = Vector3.one * startSize;
 
 				currProjectile.Init(isPlayerWeapon, damage, flySpeed);
 			}
@@ -68,14 +68,10 @@ public class ProjectileWeapon : MonoBehaviour {
 	}
 
 	public void AttackSingle() {
-		if (currBufferedAttacks == 0)
-			currTimer = 0;
 		currBufferedAttacks = Mathf.Clamp(currBufferedAttacks + 1, 0, maxBufferedAttacks);
 	}
 
 	public void StartAttackSequence() {
-		if (!isAttacking)
-			currTimer = 0;
 		isAttacking = true;
 	}
 
@@ -88,7 +84,6 @@ public class ProjectileWeapon : MonoBehaviour {
 			Destroy(currProjectile);
 		isAttacking = false;
 		currBufferedAttacks = 0;
-		currTimer = 0;
 	}
 
 	public void Enable() {
