@@ -45,7 +45,7 @@ public class CameraFollowAnchor : MonoBehaviour {
 	}
 
 	public void EndLookMouse() {
-
+		isUseGamepad = true;
 	}
 
 	public void StartLookGamepad(Vector2 gamepadPos) {

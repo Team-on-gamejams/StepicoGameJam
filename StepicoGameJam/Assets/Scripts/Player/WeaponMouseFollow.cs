@@ -43,11 +43,8 @@ public class WeaponMouseFollow : MonoBehaviour {
 			currDelta = -currDelta;
 		}
 
-		Debug.Log($"{angle} {transform.eulerAngles.z} {currDelta}/{maxDelta}");
-
 		transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z + currDelta);
 		//transform.eulerAngles = new Vector3(0, 0, angle);
-
 
 		transform.localPosition = transform.right.normalized * playerRadius;
 	}
@@ -63,7 +60,7 @@ public class WeaponMouseFollow : MonoBehaviour {
 	}
 
 	public void EndLookMouse() {
-
+		isUseGamepad = true;
 	}
 
 	public void StartLookGamepad(Vector2 gamepadPos) {

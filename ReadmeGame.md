@@ -1,6 +1,6 @@
-Game page - https://teamon.itch.io/gametemplate
-Source code - https://github.com/Team-on/UnityGameTemplate
-
+Game page - https://teamon.itch.io/curse-of-the-saviks-room
+Source code - https://github.com/savik-games/StepicoGameJam
+Used assets - https://github.com/Team-on/UnityGameTemplate/wiki/Used-assets
 
 Available in Windows, OSX, Linux, Android and Web 
 If you encounter any problem, please leave a issue! 
@@ -12,6 +12,7 @@ If you get "this package is from an unidentified developer" right click (or cont
 Linux Version Notes:
 Make sure to set the x86_64 as executable before running.
 
-
-Used assets:
-https://github.com/Team-on/UnityGameTemplate/wiki/Used-assets
+# Cheatcodes
+ * Press ` to toggle debug texts
+ * Hold ` to open debug console
+ * In console write *Help* to see list of commands
