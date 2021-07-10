@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  maxHealth: 100
+  maxHealth: 600
   healthBar: {fileID: 6828990554252086298}
   parentToDestroy: {fileID: 1629629202348834846}
 --- !u!1001 &3717679462955172996

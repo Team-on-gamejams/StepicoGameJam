@@ -27,9 +27,8 @@ public class Health : MonoBehaviour {
 	void Awake() {
 		currHealth = maxHealth;
 
-		if (healthBar) {
+		if (healthBar)
 			healthBar.Init(currHealth, maxHealth, 50);
-		}
 	}
 
 	public void ChangeHp(float delta) {
@@ -40,7 +39,8 @@ public class Health : MonoBehaviour {
 		else
 			currHealth = Mathf.Clamp(currHealth + delta, 0, maxHealth);
 
-		healthBar.UpdateCurr(currHealth);
+		if(healthBar)
+			healthBar.UpdateCurr(currHealth);
 
 		if (currHealth == 0) {
 			Die();
