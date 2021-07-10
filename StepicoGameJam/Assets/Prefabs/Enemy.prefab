@@ -192,7 +192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4342470474210135555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.438, y: 0, z: 0}
+  m_LocalPosition: {x: 0.672, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3166339786771248955}
@@ -247,6 +247,8 @@ MonoBehaviour:
   startupTime: 0.5
   cooldownTime: 1
   maxBufferedAttacks: 2
+  startSize: {x: 0.1, y: 0.1, z: 1}
+  endSize: {x: 1, y: 1, z: 1}
   damage: 15
   flySpeed: 7
   projectilePrefab: {fileID: 1283814536103085733, guid: 69285b0127d0c4c4a9ed9f1ccaa9e4fc,
@@ -351,7 +353,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.23
+  m_Radius: 0.32
 --- !u!114 &2122287945
 MonoBehaviour:
   m_ObjectHideFlags: 0

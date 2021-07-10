@@ -14,6 +14,11 @@ public class Player : MonoBehaviour {
 	public PlayerMoving mover;
 	[SerializeField] CameraFollowAnchor cameraFollowAnchor;
 	[SerializeField] WeaponMouseFollow weaponMouseFollow;
+	[SerializeField] ProjectileWeapon[] projectileWeapons;
+	[SerializeField] MeleeWeapon[] meleeWeapons;
+
+	int selectedProjectileWeapon = 0;
+	int selectedMeleeWeapon = 0;
 
 #if UNITY_EDITOR
 	private void OnValidate() {
@@ -28,6 +33,10 @@ public class Player : MonoBehaviour {
 
 	private void Awake() {
 		GameManager.Instance.player = this;
+	}
+
+	private void Start() {
+		PickWeapons();
 	}
 
 	public void OnMove(InputAction.CallbackContext context) {
@@ -87,9 +96,95 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	public void OnFire(InputAction.CallbackContext context) {
-		bool isFiring = context.ReadValueAsButton();
+	public void OnAttackMelee(InputAction.CallbackContext context) {
+		switch (context.phase) {
+			case InputActionPhase.Started:
+				Debug.Log("Melee attack");
+				break;
+		}
 
-		Debug.Log("Shoot");
+		//meleeWeapons[selectedMeleeWeapon].AttackSingle();
+	}
+
+	public void OnAttackProjectile(InputAction.CallbackContext context) {
+		switch (context.phase) {
+			case InputActionPhase.Started:
+				if (selectedProjectileWeapon == 2)
+					projectileWeapons[selectedProjectileWeapon].StartAttackSequence();
+				else
+					projectileWeapons[selectedProjectileWeapon].AttackSingle();
+				break;
+			case InputActionPhase.Canceled:
+				if (selectedProjectileWeapon == 2)
+					projectileWeapons[selectedProjectileWeapon].StopAttackSequence();
+				break;
+		}
+	}
+
+	public void OnDodge(InputAction.CallbackContext context) {
+		switch (context.phase) {
+			case InputActionPhase.Started:
+				Debug.Log("Dodge");
+				break;
+		}
+	}
+
+	public void SelectProjectileWeapon(int id) {
+		selectedProjectileWeapon = id;
+		PickWeapons();
+	}
+
+	public void SelectMeleeWeapon(int id) {
+		selectedMeleeWeapon = id;
+		PickWeapons();
+	}
+
+	public void ScrollMelee(InputAction.CallbackContext context) {
+		switch (context.phase) {
+			case InputActionPhase.Started:
+				if(context.ReadValue<float>() < 0) {
+					selectedMeleeWeapon = (int)Mathf.Repeat(selectedMeleeWeapon - 1, meleeWeapons.Length);
+				}
+				else {
+					selectedMeleeWeapon = (int)Mathf.Repeat(selectedMeleeWeapon + 1, meleeWeapons.Length);
+				}
+
+				PickWeapons();
+				break;
+		}
+	}
+
+	public void ScrollRange(InputAction.CallbackContext context) {
+		switch (context.phase) {
+			case InputActionPhase.Started:
+				if (context.ReadValue<float>() < 0) {
+					selectedProjectileWeapon = (int)Mathf.Repeat(selectedProjectileWeapon - 1, projectileWeapons.Length);
+				}
+				else {
+					selectedProjectileWeapon = (int)Mathf.Repeat(selectedProjectileWeapon + 1, projectileWeapons.Length);
+				}
+
+				PickWeapons();
+				break;
+		}
+	}
+
+	void PickWeapons() {
+		for (int i = 0; i < projectileWeapons.Length; ++i) {
+			if (i == selectedProjectileWeapon)
+				projectileWeapons[i].Enable();
+			else
+				projectileWeapons[i].Disable();
+		}
+
+		//TODDO:
+		//for (int i = 0; i < meleeWeapons.Length; ++i) {
+		//	if (i == selectedMeleeWeapon)
+		//		meleeWeapons[i].Enable();
+		//	else
+		//		meleeWeapons[i].Disable();
+		//}
+
+		Debug.Log($"Melee: {selectedMeleeWeapon}, Projectile: {selectedProjectileWeapon}");
 	}
 }

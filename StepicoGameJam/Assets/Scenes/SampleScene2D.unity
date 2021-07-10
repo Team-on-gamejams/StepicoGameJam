@@ -728,6 +728,8 @@ MonoBehaviour:
   startupTime: 0
   cooldownTime: 0.1
   maxBufferedAttacks: 2
+  startSize: {x: 0.1, y: 0.1, z: 1}
+  endSize: {x: 1, y: 1, z: 1}
   damage: 15
   flySpeed: 15
   projectilePrefab: {fileID: 2619928824207072986, guid: 3e9f3bf4650322a4dbce3e70a09d5891,
@@ -758,7 +760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904147813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.353, y: 0, z: 0}
+  m_LocalPosition: {x: 0.602, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 755308769}
@@ -958,7 +960,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053595429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.353, y: 0, z: 0}
+  m_LocalPosition: {x: 0.60199994, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1188347469}
@@ -1662,6 +1664,8 @@ MonoBehaviour:
   startupTime: 0
   cooldownTime: 0.25
   maxBufferedAttacks: 2
+  startSize: {x: 0.1, y: 0.1, z: 1}
+  endSize: {x: 1, y: 1, z: 1}
   damage: 25
   flySpeed: 10
   projectilePrefab: {fileID: 2619928824207072986, guid: 3e9f3bf4650322a4dbce3e70a09d5891,
@@ -2732,6 +2736,8 @@ MonoBehaviour:
   startupTime: 0.5
   cooldownTime: 1
   maxBufferedAttacks: 1
+  startSize: {x: 0.1, y: 0.1, z: 1}
+  endSize: {x: 1, y: 1, z: 1}
   damage: 50
   flySpeed: 20
   projectilePrefab: {fileID: 2619928824207072986, guid: 3e9f3bf4650322a4dbce3e70a09d5891,
@@ -2792,7 +2798,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053688733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.353, y: 0, z: 0}
+  m_LocalPosition: {x: 0.60199994, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1879371956}

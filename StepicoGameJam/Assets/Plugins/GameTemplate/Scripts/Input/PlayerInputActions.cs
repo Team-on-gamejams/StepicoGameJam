@@ -52,10 +52,90 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Fire"",
+                    ""name"": ""AttackMelee"",
                     ""type"": ""Button"",
                     ""id"": ""0e8bb055-53f6-44d8-a791-990bff3c66ec"",
                     ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""AttackProjectile"",
+                    ""type"": ""Button"",
+                    ""id"": ""60b5db9a-185a-4cdb-9020-3e60cbb235ea"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Dodge"",
+                    ""type"": ""Button"",
+                    ""id"": ""71e59025-ac6c-470e-a002-8a1ed17067b0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SelectProjectileKeyboard1"",
+                    ""type"": ""Button"",
+                    ""id"": ""807f4128-65ec-430a-abd9-54b21b576d90"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SelectProjectileKeyboard2"",
+                    ""type"": ""Button"",
+                    ""id"": ""8d272c67-99d6-4bee-ad68-7dd6542e845a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SelectProjectileKeyboard3"",
+                    ""type"": ""Button"",
+                    ""id"": ""73696fc8-2a24-4fcb-93ce-5893909c0e6c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SelectMeleeKeyboard1"",
+                    ""type"": ""Button"",
+                    ""id"": ""8630a34a-728a-4b75-b696-84defa476a7b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SelectMeleeKeyboard2"",
+                    ""type"": ""Button"",
+                    ""id"": ""28773686-a34f-494e-90af-5cf2dd891b5b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SelectMeleeKeyboard3"",
+                    ""type"": ""Button"",
+                    ""id"": ""789cc41d-9b5f-4392-8ee3-e98a1ccf825b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ScrollMeleeGamepad"",
+                    ""type"": ""Value"",
+                    ""id"": ""1a26a8cf-49ce-408e-8e2d-0174c50d6756"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ScrollProjectileGamepad"",
+                    ""type"": ""Value"",
+                    ""id"": ""22be1eea-d422-4dd1-9b31-54fc2ca93c8f"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -185,22 +265,22 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""05f6913d-c316-48b2-a6bb-e225f14c7960"",
-                    ""path"": ""<Mouse>/leftButton"",
+                    ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Fire"",
+                    ""action"": ""AttackMelee"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""143bb1cd-cc10-4eca-a2f0-a3664166fe91"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""Fire"",
+                    ""action"": ""AttackMelee"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -212,6 +292,259 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
                     ""action"": ""LookGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""60d51277-5918-40db-a94e-05348346ef28"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""AttackProjectile"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2aa0a9c8-2867-423d-b7c5-86c3dd16631c"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""AttackProjectile"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""44fbdfbb-b1bc-4227-a88d-f117650f26cd"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Dodge"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d5c7b068-15fd-4bcb-af99-17889ab2c1b7"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Dodge"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""13057db7-6f73-43da-94e8-6531b2660148"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectProjectileKeyboard1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4659d676-ad6e-437e-9e05-b099b10fee8d"",
+                    ""path"": ""<Keyboard>/numpad1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectProjectileKeyboard1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6fd28c2c-a30e-4472-943e-3fb030c16a58"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectProjectileKeyboard2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""24171d87-d504-414a-938e-38c45f0339ae"",
+                    ""path"": ""<Keyboard>/numpad2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectProjectileKeyboard2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3addd629-c4ff-43e1-aa15-90b7609ea9ac"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectProjectileKeyboard3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""42e25ece-f125-4d16-8491-6fff20025cd3"",
+                    ""path"": ""<Keyboard>/numpad3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectProjectileKeyboard3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""28f2daa9-24ba-489a-afdd-cb2ddc641e52"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ScrollMeleeGamepad"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""b70c59b0-1b95-4d6e-a5f4-d7d394ecdc97"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""ScrollMeleeGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""7c6150ac-b057-4e21-876a-279e305a3be5"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""ScrollMeleeGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""27640f64-18f4-4444-bf9d-1a29afbce579"",
+                    ""path"": ""<Keyboard>/6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectMeleeKeyboard3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""16731875-b47c-4571-804d-6e3db08db17d"",
+                    ""path"": ""<Keyboard>/numpad6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectMeleeKeyboard3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""52805e86-3383-40cd-8636-9d132d0aaa91"",
+                    ""path"": ""<Keyboard>/5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectMeleeKeyboard2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e164fe69-6045-423d-8e27-d64a714ca308"",
+                    ""path"": ""<Keyboard>/numpad5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectMeleeKeyboard2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d1371c27-1b73-4a34-afcb-c095f65fb862"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectMeleeKeyboard1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b331f306-bdfc-4786-a318-74e7cc776ad9"",
+                    ""path"": ""<Keyboard>/numpad4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""SelectMeleeKeyboard1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""a8ef7667-78e5-4a78-a34f-7fbd62362ec9"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ScrollProjectileGamepad"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""e707998e-9ccb-4201-82f5-09217773347d"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""ScrollProjectileGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""a9774691-46ac-4c1f-9b58-6b0b58834101"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""ScrollProjectileGamepad"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fdaee102-0adb-4d9e-a910-00146a036e40"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""ScrollProjectileGamepad"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -816,7 +1149,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_LookMouse = m_Player.FindAction("LookMouse", throwIfNotFound: true);
         m_Player_LookGamepad = m_Player.FindAction("LookGamepad", throwIfNotFound: true);
-        m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
+        m_Player_AttackMelee = m_Player.FindAction("AttackMelee", throwIfNotFound: true);
+        m_Player_AttackProjectile = m_Player.FindAction("AttackProjectile", throwIfNotFound: true);
+        m_Player_Dodge = m_Player.FindAction("Dodge", throwIfNotFound: true);
+        m_Player_SelectProjectileKeyboard1 = m_Player.FindAction("SelectProjectileKeyboard1", throwIfNotFound: true);
+        m_Player_SelectProjectileKeyboard2 = m_Player.FindAction("SelectProjectileKeyboard2", throwIfNotFound: true);
+        m_Player_SelectProjectileKeyboard3 = m_Player.FindAction("SelectProjectileKeyboard3", throwIfNotFound: true);
+        m_Player_SelectMeleeKeyboard1 = m_Player.FindAction("SelectMeleeKeyboard1", throwIfNotFound: true);
+        m_Player_SelectMeleeKeyboard2 = m_Player.FindAction("SelectMeleeKeyboard2", throwIfNotFound: true);
+        m_Player_SelectMeleeKeyboard3 = m_Player.FindAction("SelectMeleeKeyboard3", throwIfNotFound: true);
+        m_Player_ScrollMeleeGamepad = m_Player.FindAction("ScrollMeleeGamepad", throwIfNotFound: true);
+        m_Player_ScrollProjectileGamepad = m_Player.FindAction("ScrollProjectileGamepad", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -895,7 +1238,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_LookMouse;
     private readonly InputAction m_Player_LookGamepad;
-    private readonly InputAction m_Player_Fire;
+    private readonly InputAction m_Player_AttackMelee;
+    private readonly InputAction m_Player_AttackProjectile;
+    private readonly InputAction m_Player_Dodge;
+    private readonly InputAction m_Player_SelectProjectileKeyboard1;
+    private readonly InputAction m_Player_SelectProjectileKeyboard2;
+    private readonly InputAction m_Player_SelectProjectileKeyboard3;
+    private readonly InputAction m_Player_SelectMeleeKeyboard1;
+    private readonly InputAction m_Player_SelectMeleeKeyboard2;
+    private readonly InputAction m_Player_SelectMeleeKeyboard3;
+    private readonly InputAction m_Player_ScrollMeleeGamepad;
+    private readonly InputAction m_Player_ScrollProjectileGamepad;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -903,7 +1256,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @LookMouse => m_Wrapper.m_Player_LookMouse;
         public InputAction @LookGamepad => m_Wrapper.m_Player_LookGamepad;
-        public InputAction @Fire => m_Wrapper.m_Player_Fire;
+        public InputAction @AttackMelee => m_Wrapper.m_Player_AttackMelee;
+        public InputAction @AttackProjectile => m_Wrapper.m_Player_AttackProjectile;
+        public InputAction @Dodge => m_Wrapper.m_Player_Dodge;
+        public InputAction @SelectProjectileKeyboard1 => m_Wrapper.m_Player_SelectProjectileKeyboard1;
+        public InputAction @SelectProjectileKeyboard2 => m_Wrapper.m_Player_SelectProjectileKeyboard2;
+        public InputAction @SelectProjectileKeyboard3 => m_Wrapper.m_Player_SelectProjectileKeyboard3;
+        public InputAction @SelectMeleeKeyboard1 => m_Wrapper.m_Player_SelectMeleeKeyboard1;
+        public InputAction @SelectMeleeKeyboard2 => m_Wrapper.m_Player_SelectMeleeKeyboard2;
+        public InputAction @SelectMeleeKeyboard3 => m_Wrapper.m_Player_SelectMeleeKeyboard3;
+        public InputAction @ScrollMeleeGamepad => m_Wrapper.m_Player_ScrollMeleeGamepad;
+        public InputAction @ScrollProjectileGamepad => m_Wrapper.m_Player_ScrollProjectileGamepad;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -922,9 +1285,39 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @LookGamepad.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLookGamepad;
                 @LookGamepad.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLookGamepad;
                 @LookGamepad.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLookGamepad;
-                @Fire.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                @Fire.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                @Fire.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
+                @AttackMelee.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttackMelee;
+                @AttackMelee.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttackMelee;
+                @AttackMelee.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttackMelee;
+                @AttackProjectile.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttackProjectile;
+                @AttackProjectile.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttackProjectile;
+                @AttackProjectile.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttackProjectile;
+                @Dodge.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDodge;
+                @Dodge.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDodge;
+                @Dodge.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDodge;
+                @SelectProjectileKeyboard1.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectProjectileKeyboard1;
+                @SelectProjectileKeyboard1.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectProjectileKeyboard1;
+                @SelectProjectileKeyboard1.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectProjectileKeyboard1;
+                @SelectProjectileKeyboard2.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectProjectileKeyboard2;
+                @SelectProjectileKeyboard2.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectProjectileKeyboard2;
+                @SelectProjectileKeyboard2.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectProjectileKeyboard2;
+                @SelectProjectileKeyboard3.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectProjectileKeyboard3;
+                @SelectProjectileKeyboard3.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectProjectileKeyboard3;
+                @SelectProjectileKeyboard3.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectProjectileKeyboard3;
+                @SelectMeleeKeyboard1.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectMeleeKeyboard1;
+                @SelectMeleeKeyboard1.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectMeleeKeyboard1;
+                @SelectMeleeKeyboard1.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectMeleeKeyboard1;
+                @SelectMeleeKeyboard2.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectMeleeKeyboard2;
+                @SelectMeleeKeyboard2.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectMeleeKeyboard2;
+                @SelectMeleeKeyboard2.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectMeleeKeyboard2;
+                @SelectMeleeKeyboard3.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectMeleeKeyboard3;
+                @SelectMeleeKeyboard3.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectMeleeKeyboard3;
+                @SelectMeleeKeyboard3.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelectMeleeKeyboard3;
+                @ScrollMeleeGamepad.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScrollMeleeGamepad;
+                @ScrollMeleeGamepad.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScrollMeleeGamepad;
+                @ScrollMeleeGamepad.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScrollMeleeGamepad;
+                @ScrollProjectileGamepad.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScrollProjectileGamepad;
+                @ScrollProjectileGamepad.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScrollProjectileGamepad;
+                @ScrollProjectileGamepad.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnScrollProjectileGamepad;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -938,9 +1331,39 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @LookGamepad.started += instance.OnLookGamepad;
                 @LookGamepad.performed += instance.OnLookGamepad;
                 @LookGamepad.canceled += instance.OnLookGamepad;
-                @Fire.started += instance.OnFire;
-                @Fire.performed += instance.OnFire;
-                @Fire.canceled += instance.OnFire;
+                @AttackMelee.started += instance.OnAttackMelee;
+                @AttackMelee.performed += instance.OnAttackMelee;
+                @AttackMelee.canceled += instance.OnAttackMelee;
+                @AttackProjectile.started += instance.OnAttackProjectile;
+                @AttackProjectile.performed += instance.OnAttackProjectile;
+                @AttackProjectile.canceled += instance.OnAttackProjectile;
+                @Dodge.started += instance.OnDodge;
+                @Dodge.performed += instance.OnDodge;
+                @Dodge.canceled += instance.OnDodge;
+                @SelectProjectileKeyboard1.started += instance.OnSelectProjectileKeyboard1;
+                @SelectProjectileKeyboard1.performed += instance.OnSelectProjectileKeyboard1;
+                @SelectProjectileKeyboard1.canceled += instance.OnSelectProjectileKeyboard1;
+                @SelectProjectileKeyboard2.started += instance.OnSelectProjectileKeyboard2;
+                @SelectProjectileKeyboard2.performed += instance.OnSelectProjectileKeyboard2;
+                @SelectProjectileKeyboard2.canceled += instance.OnSelectProjectileKeyboard2;
+                @SelectProjectileKeyboard3.started += instance.OnSelectProjectileKeyboard3;
+                @SelectProjectileKeyboard3.performed += instance.OnSelectProjectileKeyboard3;
+                @SelectProjectileKeyboard3.canceled += instance.OnSelectProjectileKeyboard3;
+                @SelectMeleeKeyboard1.started += instance.OnSelectMeleeKeyboard1;
+                @SelectMeleeKeyboard1.performed += instance.OnSelectMeleeKeyboard1;
+                @SelectMeleeKeyboard1.canceled += instance.OnSelectMeleeKeyboard1;
+                @SelectMeleeKeyboard2.started += instance.OnSelectMeleeKeyboard2;
+                @SelectMeleeKeyboard2.performed += instance.OnSelectMeleeKeyboard2;
+                @SelectMeleeKeyboard2.canceled += instance.OnSelectMeleeKeyboard2;
+                @SelectMeleeKeyboard3.started += instance.OnSelectMeleeKeyboard3;
+                @SelectMeleeKeyboard3.performed += instance.OnSelectMeleeKeyboard3;
+                @SelectMeleeKeyboard3.canceled += instance.OnSelectMeleeKeyboard3;
+                @ScrollMeleeGamepad.started += instance.OnScrollMeleeGamepad;
+                @ScrollMeleeGamepad.performed += instance.OnScrollMeleeGamepad;
+                @ScrollMeleeGamepad.canceled += instance.OnScrollMeleeGamepad;
+                @ScrollProjectileGamepad.started += instance.OnScrollProjectileGamepad;
+                @ScrollProjectileGamepad.performed += instance.OnScrollProjectileGamepad;
+                @ScrollProjectileGamepad.canceled += instance.OnScrollProjectileGamepad;
             }
         }
     }
@@ -1123,7 +1546,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnLookMouse(InputAction.CallbackContext context);
         void OnLookGamepad(InputAction.CallbackContext context);
-        void OnFire(InputAction.CallbackContext context);
+        void OnAttackMelee(InputAction.CallbackContext context);
+        void OnAttackProjectile(InputAction.CallbackContext context);
+        void OnDodge(InputAction.CallbackContext context);
+        void OnSelectProjectileKeyboard1(InputAction.CallbackContext context);
+        void OnSelectProjectileKeyboard2(InputAction.CallbackContext context);
+        void OnSelectProjectileKeyboard3(InputAction.CallbackContext context);
+        void OnSelectMeleeKeyboard1(InputAction.CallbackContext context);
+        void OnSelectMeleeKeyboard2(InputAction.CallbackContext context);
+        void OnSelectMeleeKeyboard3(InputAction.CallbackContext context);
+        void OnScrollMeleeGamepad(InputAction.CallbackContext context);
+        void OnScrollProjectileGamepad(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
