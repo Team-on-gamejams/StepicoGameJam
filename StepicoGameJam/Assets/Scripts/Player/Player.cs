@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
 	[SerializeField] WeaponMouseFollow weaponMouseFollow;
 	[SerializeField] ProjectileWeapon[] projectileWeapons;
 	[SerializeField] MeleeWeapon[] meleeWeapons;
+	[SerializeField] Health health;
 
 	int selectedProjectileWeapon = 0;
 	int selectedMeleeWeapon = 0;
@@ -28,6 +29,8 @@ public class Player : MonoBehaviour {
 			cameraFollowAnchor = GetComponent<CameraFollowAnchor>();
 		if (!weaponMouseFollow)
 			weaponMouseFollow = GetComponent<WeaponMouseFollow>();
+		if (!health)
+			health = GetComponentInChildren<Health>();
 	}
 #endif
 
@@ -37,6 +40,29 @@ public class Player : MonoBehaviour {
 
 	private void Start() {
 		PickWeapons();
+	}
+
+	public void ApplyUpgrade(PlayerUpgradeEnum playerUpgradeEnum) {
+		switch (playerUpgradeEnum) {
+			case PlayerUpgradeEnum.MoreHPAndHeal:
+				health.ReInitHealth(health.MaxHealth * 1.5f, health.MaxHealth * 1.5f);
+				break;
+			case PlayerUpgradeEnum.UnlockNewWeaponRange:
+				break;
+			case PlayerUpgradeEnum.UnlockNewWeaponMelee:
+				break;
+			case PlayerUpgradeEnum.MoreWeaponDamage:
+				break;
+			case PlayerUpgradeEnum.LessWeaponCDAndMoreBulletSpeed:
+				break;
+			case PlayerUpgradeEnum.MorePlayerSpeed:
+				break;
+			case PlayerUpgradeEnum.BetterDodge:
+				break;
+			default:
+				Debug.Log("Wrong upgrade type");
+				break;
+		}
 	}
 
 	public void OnMove(InputAction.CallbackContext context) {

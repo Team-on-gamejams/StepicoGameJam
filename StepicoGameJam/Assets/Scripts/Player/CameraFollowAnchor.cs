@@ -13,6 +13,7 @@ public class CameraFollowAnchor : MonoBehaviour {
 	Vector2 gamepadDir;
 
 	Transform playerMover;
+	Vector3 playerWorldPos;
 
 
 	void Start() {
@@ -28,7 +29,8 @@ public class CameraFollowAnchor : MonoBehaviour {
 		}
 		else {
 			Vector3 cursorWorldPos = TemplateGameManager.Instance.Camera.ScreenToWorldPoint(mouseScreenPos).SetZ(0.0f);
-			Vector3 playerWorldPos = playerMover.position;
+			if(playerMover != null)
+				playerWorldPos = playerMover.position;
 
 			transform.position = playerWorldPos + (cursorWorldPos - playerWorldPos) * keyboardCursorWeight;
 		}

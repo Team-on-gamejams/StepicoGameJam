@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour {
+	public float MaxHealth => maxHealth;
+
 	[Header("Values")]
 	[SerializeField] bool isPlayer = false;
 	[SerializeField] float maxHealth = 100;
@@ -28,7 +30,12 @@ public class Health : MonoBehaviour {
 	bool isDead = false;
 
 	void Awake() {
-		currHealth = maxHealth;
+		ReInitHealth(maxHealth, maxHealth);
+	}
+
+	public void ReInitHealth(float currHp, float maxHp) {
+		currHealth = currHp;
+		maxHealth = maxHp;
 
 		if (healthBar)
 			healthBar.Init(currHealth, maxHealth, 50);
@@ -62,7 +69,7 @@ public class Health : MonoBehaviour {
 		if (isPlayer) {
 			Destroy(parentToDestroy);
 
-			LeanTween.delayedCall(gameObject, 1.0f, () => {
+			LeanTween.delayedCall(1.0f, () => {
 				SceneLoader.Instance.LoadScene(TemplateMainMenu.sceneIdToLoad, true, true);
 			});
 		}
