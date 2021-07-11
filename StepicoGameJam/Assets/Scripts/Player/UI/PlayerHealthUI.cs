@@ -27,9 +27,10 @@ public class PlayerHealthUI : MonoBehaviour {
 
 	void UpdateVisuals() {
 		if (textField)
-			textField.text = $"{curr} / {max}";
 
-		LeanTween.value(fillImage.fillAmount, Mathf.Lerp(0, 0.25f, curr / max), 0.1f)
+			textField.text = $"<u>{curr:0}</u>\n{max:0}";
+
+		LeanTween.value(gameObject, fillImage.fillAmount, Mathf.Lerp(0, 0.25f, curr / max), 0.1f)
 			.setEase(LeanTweenType.easeInQuad)
 			.setOnUpdate((float fill) => {
 				fillImage.fillAmount = fill;

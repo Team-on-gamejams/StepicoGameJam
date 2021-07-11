@@ -124,7 +124,10 @@ public class Player : MonoBehaviour {
 	public void OnDodge(InputAction.CallbackContext context) {
 		switch (context.phase) {
 			case InputActionPhase.Started:
-				Debug.Log("Dodge");
+				mover.Dodge();
+				break;
+			case InputActionPhase.Canceled:
+				mover.CancelDodge();
 				break;
 		}
 	}
