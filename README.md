@@ -67,6 +67,8 @@ Video about TriJam from Rocknight Studios: https://www.youtube.com/watch?v=6PysB
  * Unity game template - https://github.com/Team-on/UnityGameTemplate
  * Assets from template - https://github.com/Team-on/UnityGameTemplate/wiki/Used-assets
  * game-icons.net - UI icons
+ * https://opengameart.org/content/rock-theme - main menu theme
+ * https://opengameart.org/content/dark-electronic-rock-instrumental-nin-style - game theme
  
  
 # Downloads and Links
