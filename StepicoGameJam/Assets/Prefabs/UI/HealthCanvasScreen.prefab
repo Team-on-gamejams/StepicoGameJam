@@ -189,11 +189,11 @@ RectTransform:
   m_Father: {fileID: 6788770158084844441}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 15, y: -10}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.00022411352, y: 0}
   m_SizeDelta: {x: 400, y: 90}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &900229947934633520
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -441,7 +441,7 @@ PrefabInstance:
     - target: {fileID: 2758865243853486176, guid: 116cbeca9a9c7be4aaf110510e6d2a6b,
         type: 3}
       propertyPath: m_ChildAlignment
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4230147638114373130, guid: 116cbeca9a9c7be4aaf110510e6d2a6b,
         type: 3}
@@ -471,7 +471,7 @@ PrefabInstance:
     - target: {fileID: 6872756988436198508, guid: 116cbeca9a9c7be4aaf110510e6d2a6b,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6872756988436198508, guid: 116cbeca9a9c7be4aaf110510e6d2a6b,
         type: 3}
@@ -491,12 +491,12 @@ PrefabInstance:
     - target: {fileID: 6872756988436198508, guid: 116cbeca9a9c7be4aaf110510e6d2a6b,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 400
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 6872756988436198508, guid: 116cbeca9a9c7be4aaf110510e6d2a6b,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 90
+      value: 121.5602
       objectReference: {fileID: 0}
     - target: {fileID: 6872756988436198508, guid: 116cbeca9a9c7be4aaf110510e6d2a6b,
         type: 3}

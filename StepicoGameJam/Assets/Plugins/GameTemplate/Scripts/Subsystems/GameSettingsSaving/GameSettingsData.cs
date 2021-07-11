@@ -10,7 +10,7 @@ public class GameSettingsData {
 	//Language get saved by Polyglot
 
 	//Audio settings
-	public AudioSettigns audioSettigns;
+	public AudioSettigns audioSettigns = new AudioSettigns();
 
 	public void ApplyAllSettings() {
 		ApplyAudioSettings();
