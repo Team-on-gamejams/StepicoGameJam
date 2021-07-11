@@ -114,7 +114,8 @@ public class PlayerMoving : MonoBehaviour {
 
 	public void EndMove() {
 		moveVector = Vector2.zero;
-		rb.velocity = Vector2.zero;
+		if(rb)
+			rb.velocity = Vector2.zero;
 
 		isMoving = false;
 	}

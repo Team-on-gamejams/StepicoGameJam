@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  maxHealth: 1000
+  maxHealth: 850
   healthBar: {fileID: 6828990554252086298}
   playerHealthUI: {fileID: 0}
   onDieClip: {fileID: 8300000, guid: 2faab91faa8135b4cb38f4ebba2180d0, type: 3}
