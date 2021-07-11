@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour {
 	public float MaxHealth => maxHealth;
+	public Action onDie;
 
 	[Header("Values")]
 	[SerializeField] bool isPlayer = false;
@@ -70,6 +72,8 @@ public class Health : MonoBehaviour {
 		isDead = true;
 
 		AudioManager.Instance.Play(onDieClip);
+
+		onDie?.Invoke();
 
 		if (isPlayer) {
 			Destroy(parentToDestroy);

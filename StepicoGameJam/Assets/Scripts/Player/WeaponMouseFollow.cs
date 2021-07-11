@@ -17,7 +17,7 @@ public class WeaponMouseFollow : MonoBehaviour {
 
 	void Start() {
 		playerMover = GameManager.Instance.player.mover.transform;
-		playerRadius = GameManager.Instance.player.Radius;
+		playerRadius = 0.23f;
 	}
 
 	public void Update() {

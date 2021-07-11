@@ -41,7 +41,12 @@ public class RoomManager : MonoBehaviour {
 
 	public void OnKillAllEnemies() {
 		if (currRoomId + 1 == roomsSequence.Count) {
+			//TODO:
 			Debug.Log($"{Localization.Get(winMessageKey)}");
+
+			LeanTween.delayedCall(10.0f, () => {
+				SceneLoader.Instance.LoadScene(0, true, true);
+			});
 		}
 		else {
 			AudioManager.Instance.ChangeASVolume(gameas, 0.25f, 0.5f);
@@ -70,7 +75,7 @@ public class RoomManager : MonoBehaviour {
 			AudioManager.Instance.ChangeASVolume(gameas, 1.0f, 1.0f);
 
 			LeanTween.delayedCall(gameObject, 1.0f, () => {
-				CurrRoom.gameObject.SetActive(false);
+				roomsSequence[currRoomId - 1].gameObject.SetActive(false);
 				OnStartNewRoom();
 			});
 		}

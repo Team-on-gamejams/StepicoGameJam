@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour {
 	[Header("Refs"), Space]
 	[SerializeField] ProjectileWeapon projectileWeapon;
 	[SerializeField] Transform movingPart;
+	[SerializeField] Health health;
 	[SerializeField] float radius = 0.5f;
 	[SerializeField] float maxAngularSpeed = 180.0f;
 
@@ -18,6 +19,8 @@ public class Enemy : MonoBehaviour {
 	private void OnValidate() {
 		if (!projectileWeapon)
 			projectileWeapon = GetComponentInChildren<ProjectileWeapon>();
+		if (!health)
+			health = GetComponentInChildren<Health>();
 	}
 #endif
 
@@ -25,6 +28,16 @@ public class Enemy : MonoBehaviour {
 		projectileWeapon.StartAttackSequence();
 
 		target = GameManager.Instance.player.mover.transform;
+
+		health.onDie += OnDie;
+	}
+
+	void OnDestroy() {
+		health.onDie -= OnDie;
+	}
+
+	void OnDie() {
+		onDie?.Invoke(this);
 	}
 
 	private void Update() {
@@ -49,7 +62,5 @@ public class Enemy : MonoBehaviour {
 		projectileWeapon.transform.localPosition = projectileWeapon.transform.right.normalized * radius;
 	}
 
-	void OnDestroy() {
-		onDie?.Invoke(this);
-	}
+	
 }

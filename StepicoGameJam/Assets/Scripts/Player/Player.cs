@@ -68,7 +68,7 @@ public class Player : MonoBehaviour {
 				foreach (var weapon in projectileWeapons) {
 					weapon.cooldownTime /= 1.5f;
 					weapon.startupTime /= 1.5f;
-					weapon.flySpeed *= 1.5f;
+					//weapon.flySpeed *= 1.5f;
 				}
 				break;
 			case PlayerUpgradeEnum.MorePlayerSpeed:

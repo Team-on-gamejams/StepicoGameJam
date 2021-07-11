@@ -213,8 +213,8 @@ LOADING_TIP_10,,"Btw, savik is nickname of my friend","BTW, Savik est surnom de 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 MENU_IO_RESET,Reset control bindibng,Reset,Réinitialiser,Reiniciar,Zurücksetzen,Ripristina,Redefinir,Redefinir,Сброс настроек,Επαναφορά,Sıfırla,Nulstil,Nullstille,Återställa,Reset,Resetowanie,Nollata,リセットする,重启,重启,초기화,Resetovat,Visszaállítás,Resetare,รีเซ็ต,Нулиране,אִתחוּל,إعادة ضبط,Resetovati,Reset,Reset,Berrezarri,Скічаць скід,Reiniciar,Lähtestama,Endurstilla,Atiestatīt,Atstatyti. \ T,Resetovať,Ponastaviti,Скидання,Cài lại
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MOUSE_TOOLTIP_CYCLE_HELP,,Cycle through help informatiol level,Cycle à travers l'aide de l'informatiol,Ciclo a través de Ayuda Informatiol Nivel,Zyklus durch Hilfe Informatiol Level,Ciclo attraverso il livello di informatorio di aiuto,Ciclo através do nível de informação da ajuda,Ciclo através do nível de informação da ajuda,Цикл через помощь в информационном уровне,Μέσω του επιπέδου πληροφοριών βοήθειας,İnformatiol seviyesine yardım yoluyla döngü,Cyklus gennem hjælp informatiol niveau,Syklus gjennom hjelp Informatiol nivå,Cykel genom hjälpinformatiolnivå,Cyclus door help informatiol niveau,Cykl dzięki pomocy poziomie informatycy,Sykli apua informaatiotasolla,Help Informatiolレベルを介したサイクル,通过帮助信息级别循环,通过帮助信息级别循环,도움말을 통해 정보를 제공합니다,Cyklus prostřednictvím pomoci Informatiol,A Súgó Informatiol szintjén keresztüli ciklus,Ciclul prin nivelul de informare al ajutorului,วัฏจักรผ่านความช่วยเหลือระดับ informatiol,Цикъл чрез помощно ниво на помощ,מחזור דרך עזרה רמת Informatiol,دورة من خلال مساعدة مستوى المعلومات,Ciklus kroz pomoć u nivou informatiola,Siklus melalui level bantuan informatiol,Fiets deur Help Informatiol-vlak,Zikloari laguntza informatiko mailaren bidez,Цыкл праз дапамогу informatiol ўзроўню,Cicle a través de l'ajuda de nivell informatiu,Tsükli kaudu abi informaatiooli tasandil,Hringrás í gegnum hjálp upplýsingatækni,"Cikls, izmantojot palīdzības informatiola līmeni",Ciklo per padėti informatiol lygį,Cyklus prostredníctvom pomoci informatiz,Kolesarite s pomočjo Informatiola,Цикл через допомогу інформатиолу рівня,Chu kỳ thông qua Trợ giúp Cấp độ thông tin
-MOUSE_TOOLTIP_WEBSITE,,Open developer website,Site Web Open Developer,Sitio web de desarrollador abierto,Open Developer-Website,Apri il sito Web dello sviluppatore,Open Developer Website,Open Developer Website,Открытый сайт разработчика,Ανοίξτε την ιστοσελίδα του προγραμματιστή,Aç Geliştirici web sitesi,Åbn Developer Website,Åpen utvikler nettside,Open Developer webbplats,Open ontwikkelaarswebsite,Open Developer Website.,Avaa kehittäjän verkkosivusto,開発者のウェブサイトを開く,开放式开发人员网站,开放式开发人员网站,개발 웹 사이트를 엽니 다,Otevřená webová stránka pro vývojáře,Nyissa meg a fejlesztői webhelyet,Deschis site web dezvoltator.,เปิดเว็บไซต์นักพัฒนาซอฟต์แวร์,Отворете уебсайта на разработчиците,אתר מפתח פתוח,فتح المطور الموقع,Web stranica otvorenog programera,Buka situs web pengembang,Oop ontwikkelaar webwerf,Garatzaileen webgune irekia,Адкрыты сайт распрацоўніка,Obriu el lloc web del desenvolupador,Avage arendaja veebisait,Open Developer Website,Atvērt Izstrādātāju tīmekļa vietni,Atviro kūrėjo svetainė,Otvorená webová stránka pre vývojárov,Odprite spletno stran razvijalca,Відкрийти веб-сайт розробника,Mở trang web nhà phát triển
+MOUSE_TOOLTIP_CYCLE_HELP,,Cycle through help informatiol level,Cycle à travers l'aide de l'informatiol,Ciclo a través de Ayuda Informatiol Nivel,Zyklus durch Hilfe Informatiol Level,Ciclo attraverso il livello di informatorio di aiuto,Ciclo através do nível de informação da ajuda,Ciclo através do nível de informação da ajuda,Цикл через помощь в информационном уровне,Μέσω του επιπέδου πληροφοριών βοήθειας,İnformatiol seviyesi yardım yoluyla döngü,Cyklus gennem hjælp informatiol niveau,Syklus gjennom hjelp Informatiol nivå,Cykel genom hjälpinformatiolnivå,Cyclus door help informatiol niveau,Cykl dzięki pomocy poziomie informatycy,Sykli apua informaatiotasolla,Help Informatiolレベルを介したサイクル,通过帮助信息级别循环,通过帮助信息级别循环,도움말을 통해 정보를 제공합니다,Cyklus prostřednictvím pomoci Informatiol,A Súgó Informatiol szintjén keresztüli ciklus,Ciclul prin nivelul de informare al ajutorului,วัฏจักรผ่านความช่วยเหลือระดับ informatiol,Цикъл чрез помощно ниво на помощ,מחזור דרך עזרה רמת Informatiol,دورة من خلال مساعدة مستوى المعلومات,Ciklus kroz pomoć u nivou informatiola,Siklus melalui level bantuan informatiol,Fiets deur Help Informatiol-vlak,Zikloari laguntza informatiko mailaren bidez,Цыкл праз дапамогу informatiol ўзроўню,Cicle a través de l'ajuda de nivell informatiu,Tsükli kaudu abi informaatiooli tasandil,Hringrás í gegnum hjálp upplýsingatækni,"Cikls, izmantojot palīdzības informatiola līmeni",Ciklo per padėti informatiol lygį,Cyklus prostredníctvom pomoci informatiz,Kolesarite s pomočjo Informatiola,Цикл через допомогу інформатиолу рівня,Chu kỳ thông qua Trợ giúp Cấp độ thông tin
+MOUSE_TOOLTIP_WEBSITE,,Open developer website,Site Web Open Developer,Sitio web de desarrollador abierto,Open Developer-Website,Apri il sito Web dello sviluppatore,Open Developer Website,Open Developer Website,Открытый сайт разработчика,Ανοίξτε την ιστοσελίδα του προγραμματιστή,Aç Geliştirici Web Sitesi,Åbn Developer Website,Åpen utvikler nettside,Open Developer webbplats,Open ontwikkelaarswebsite,Open Developer Website.,Avaa kehittäjän verkkosivusto,開発者のウェブサイトを開く,开放式开发人员网站,开放式开发人员网站,개발 웹 사이트를 엽니 다,Otevřená webová stránka pro vývojáře,Nyissa meg a fejlesztői webhelyet,Deschis site web dezvoltator.,เปิดเว็บไซต์นักพัฒนาซอฟต์แวร์,Отворете уебсайта на разработчиците,אתר מפתח פתוח,فتح المطور الموقع,Web stranica otvorenog programera,Buka situs web pengembang,Oop ontwikkelaar webwerf,Garatzaileen webgune irekia,Адкрыты сайт распрацоўніка,Obriu el lloc web del desenvolupador,Avage arendaja veebisait,Open Developer Website.,Atvērt Izstrādātāju tīmekļa vietni,Atviro kūrėjo svetainė,Otvorená webová stránka pre vývojárov,Odprite spletno stran razvijalca,Відкрийти веб-сайт розробника,Mở trang web nhà phát triển
 MOUSE_TOOLTIP_DISCORD,,Join discord server where you can propose feature or report a bug,Rejoignez Discord Server où vous pouvez proposer une fonctionnalité ou signaler un bug,Únete a la discordia del servidor donde puede proponer característica o reportar un error,"Join Discord Server, wo Sie Feature vorschlagen oder einen Fehler melden können",Iscriviti a Discorder Server in cui è possibile proporre funzionalità o segnalare un bug,Junte-se ao Discord Server onde você pode propor um recurso ou relatar um bug,Junte-se ao Discord Server onde você pode propor um recurso ou relatar um bug,"Присоединяйтесь к SuckOD Server, где вы можете предложить функцию или сообщить об ошибке",Εγγραφείτε στο διακομιστή Discord όπου μπορείτε να προτείνετε τη λειτουργία ή να αναφέρετε ένα σφάλμα,Özelliği önerebileceğiniz veya bir hata bildirebileceğiniz Discord Server'a katılın,"Deltag Diskord-server, hvor du kan foreslå funktion eller rapportere en fejl",Bli med Discord Server hvor du kan foreslå funksjon eller rapportere en feil,Gå med i Discord Server där du kan föreslå funktion eller rapportera en bugg,Word lid van Discord Server waar u een functie kunt voorstellen of een bug kunt rapporteren,"Dołącz do Discord Server, gdzie możesz zaproponować funkcję lub zgłosić błąd","Liity Discord-palvelimeen, johon voit ehdottaa ominaisuutta tai ilmoittaa virheestä",機能を提案したり、バグを報告できるDiscord Serverに参加する,加入Discord Server，您可以在其中提出功能或报告错误,加入Discord Server，您可以在其中提出功能或报告错误,기능을 제안하거나 버그를보고 할 수있는 디스 르 드 서버에 가입하십시오.,"Připojte se k serveru Discord Server, kde můžete navrhnout funkci nebo hlásit chybu","Csatlakozzon a Diszkord szerverhez, ahol javaslatot tehetünk vagy jelentkezhet egy hibára",Alăturați-vă serverului DISCORD unde puteți propune caracteristica sau raportați un bug,เข้าร่วม Discord Server ที่คุณสามารถเสนอคุณสมบัติหรือรายงานข้อบกพร่อง,"Присъединете се към дискообразен сървър, където можете да предложите функция или да съобщите за грешка",הצטרף לשרת Discord שבו באפשרותך להציע תכונה או לדווח על באג,انضم إلى Scrong Server حيث يمكنك اقتراح ميزة أو الإبلاغ عن علة,Pridružite se Discord poslužitelju na kojem možete predložiti funkciju ili prijaviti grešku,Bergabunglah dengan Discord Server di mana Anda dapat mengusulkan fitur atau melaporkan bug,Sluit aan by Discord Server waar u kan voorstel of 'n fout kan rapporteer,Erregistratu Discord Server non funtzioa proposatu dezakezu edo akats baten berri eman,"Рэгістрацыя Discord Server, дзе вы можаце прапанаваць асаблівасць або паведаміць пра памылку",Uniu-vos al servidor de Discòrdia on podeu proposar la funció o informar d'un error,"Liitu Disclars Serveriga, kus saate oma funktsiooni esitada või teatada viga",Join Discord Server þar sem þú getur lagt til eiginleika eða tilkynnt galla,"Pievienojieties nesaskaņām serverim, kur var piedāvāt funkciju vai ziņot par kļūdu","Prisijunkite prie ""DiskrimD Server"", kur galite pasiūlyti funkciją arba pranešti apie klaidą","Pripojte sa Concord Server, kde môžete navrhnúť funkciu alebo nahlásiť chybu","Pridružite se strežniku Discord, kjer lahko predlagate funkcijo ali prijavite napako","Приєднуйтесь до сервера Discord, де ви можете запропонувати функцію фичу повідомити про багу",Tham gia Discord Server nơi bạn có thể đề xuất tính năng hoặc báo cáo lỗi
 MOUSE_TOOLTIP_TWITTER,,Open developer twitter,Développeur ouvert Twitter,Desarrollador abierto Twitter,Öffnen Sie Entwickler Twitter.,Apri sviluppatore Twitter.,Desenvolvedor aberto Twitter.,Desenvolvedor aberto Twitter.,Открытый разработчик Twitter.,Ανοιχτός προγραμματιστής Twitter,Aç Geliştirici Twitter,Åbn Developer Twitter,Åpne Developer Twitter,Öppen utvecklare twitter,Open Developer Twitter,Open Developer Twitter.,Avaa kehittäjä Twitter,開発者Twitterを開く,打开开发人员推特,打开开发人员推特,개발 개발자 Twitter를 엽니 다,Otevřený vývojář Twitter.,Nyissa meg a Fejlesztő Twitter,Deschideți dezvoltatorul Twitter.,เปิดนักพัฒนา Twitter,Open Developer Twitter.,פתח מפתח טוויטר,فتح المطور Twitter.,Otvoreni programer Twitter,Buka Pengembang Twitter,Open Ontwikkelaar Twitter,Ireki Garatzailea Twitter,Адкрыты распрацоўшчык Twitter,Desenvolupador obert Twitter,Avage arendaja Twitter,Opnaðu verktaki Twitter,Atvērt Izstrādātājs Twitter,Atviras kūrėjas Twitter.,Otvorený vývojár Twitter,Odprite razvijalce Twitter.,Twitter розробника,Mở twitter nhà phát triển
 MOUSE_TOOLTIP_ITCHIO,,"Open game page on itch.io.
@@ -225,7 +225,7 @@ Hier können Sie neue Version herunterladen oder ein Spiel kaufen","Apri la pagi
 Qui puoi scaricare nuova versione o acquistare un gioco","Page de jogo aberto no Itch.io.
 Aqui você pode baixar nova versão ou comprar um jogo","Page de jogo aberto no Itch.io.
 Aqui você pode baixar nova versão ou comprar um jogo","Открытая игровая страница на itch.io.
-Здесь вы можете скачать новую версию или купить игру","Ανοίξτε την σελίδα παιχνιδιών στο φαγούρα.IO.
+Здесь вы можете скачать новую версию или купить игру","Ανοίξτε την σελίδα παιχνιδιών στο φαγούρα.Io.
 Εδώ μπορείτε να κατεβάσετε νέα έκδοση ή να αγοράσετε ένα παιχνίδι","Itch.io'da açık oyun sayfası.
 Burada yeni sürümü indirebilir veya bir oyun satın alabilirsiniz.","Åbn spil side på ITCH.IO.
 Her kan du downloade ny version eller købe et spil","Åpne spillside på kløen.
@@ -268,12 +268,179 @@ MENU_SETTINGS_AUDIO_SOUNDS_SLIDER_HEADER,,Sound effect volume,Volume de l'effet 
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 BOSS_NAME,,Savik's room,La chambre de Savik,Habitación de Savik,Saviks Zimmer,Savik's Room.,Savik's Room.,Savik's Room.,Комната савика,Το δωμάτιο του Savik,Savik odası,Saviks værelse.,Saviks rom,Saviks rum,Savik's Room,Pokój Savika.,Savikin huone,Savikの部屋,Savik的房间,Savik的房间,사자 룸,Savikův pokoj,Savik szobája,Camera lui Savik,ห้องพักของ Savik,Стаята на Савик,חדרו של סאביק,غرفة سافيك,Savikova soba,Kamar Savik,Savik se kamer,Savik-en gela,Нумар Савіка,Sala de Savik,Saviki tuba,Sail er herbergi,Savikas istaba,Saviko kambarys,Izba Savik,Soba SAVAIK,Кімната Савіка,Phòng của Savik
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ROOM_UPGRADE_MORE_SPACE,,Increase room size by {0}%,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Збільшиться розмір кімнати на {0}%,Loading...
-ROOM_UPGRADE_MORE_ENEMIES_SINGLE,,Add 1 enemy,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Додасться 1 ворога,Loading...
-ROOM_UPGRADE_MORE_ENEMIES,,Add {0} enemies,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Додасться {0} ворогів,Loading...
-ROOM_UPGRADE_STRONGER_ENEMIES,,Increase enemies strength by {0}%,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Збільшиться сила ворогів на {0}%,Loading...
-ROOM_UPGRADE_BOSS_FIGHT,,BOSS FIGHT,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,БИТВА З БОССОМ,Loading...
-ROOM_UPGRADE_TRAPS_FIRST,,Add traps to room,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,В кімнаті з'являються пастки,Loading...
-ROOM_UPGRADE_TRAPS,,Add more traps to room,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Більше пасток в кімнаті,Loading...
+ROOM_UPGRADE_MORE_SPACE,,Increase room size by {0}%,Augmenter la taille de la salle par {0}%,Aumentar el tamaño de la sala por {0}%,Erhöhen Sie die Raumgröße um {0}%,Aumentare le dimensioni della stanza di {0}%,Aumentar o tamanho da sala por {0}%,Aumentar o tamanho da sala por {0}%,Увеличить размер номера по {0}%,Αυξήστε το μέγεθος του δωματίου κατά {0}%,Oda boyutunu arttırın {0}%,Forøg rummets størrelse ved {0}%,Øk romstørrelsen med {0}%,Öka rumstorlek med {0}%,Verhoog de grootte van de kamer door {0}%,Zwiększ rozmiar pokoju przez {0}%,Lisää huoneen kokoa {0}%,{0}％で部屋のサイズを大きくする,增加房间大小{0}％,增加房间大小{0}％,객실 크기를 {0} % 증가시킵니다.,Zvýšit velikost pokoje {0}%,Növelje a szoba méretét {0}% -kal,Creșteți dimensiunea camerei de {0}%,เพิ่มขนาดห้องโดย {0}%,Увеличете размера на помещението с {0}%,להגדיל את גודל החדר על ידי {0}%,زيادة حجم الغرفة بواسطة {0}٪,Povećajte veličinu sobe za {0}%,Tingkatkan ukuran kamar dengan {0}%,Verhoog kamergrootte deur {0}%,Gelaren tamaina handitu {0}%,Павелічэнне памеру нумароў па {0}%,Augmenteu la mida de l'habitació de {0}%,Suurendage ruumi suurust {0}% -ga,Auka herbergi stærð með {0}%,Palieliniet istabas izmēru ar {0}%,Padidinkite kambario dydį {0}%,Zvýšiť veľkosť miestnosti {0}%,Povečajte velikost prostora za {0}%,Збільшиться розмір кімнати на {0}%,Tăng kích thước phòng bởi {0}%
+ROOM_UPGRADE_MORE_ENEMIES_SINGLE,,Add 1 enemy,Ajouter 1 ennemi,Añadir 1 enemigo,Fügen Sie einen Feind hinzu,Aggiungi 1 nemico,Adicione 1 inimigo,Adicione 1 inimigo,Добавить 1 противник,Προσθέστε 1 εχθρό,1 düşman ekle,Tilføj 1 fjende.,Legg til 1 fiende,Lägg till 1 fiende,Voeg 1 vijand toe,Dodaj 1 wroga.,Lisää 1 vihollinen,1つの敵を追加します,加1敌人,加1敌人,적을 추가하십시오,Přidat 1 nepřítele,Add 1 ellenséget,Adăugați 1 inamic,เพิ่มศัตรู 1 ตัว,Добавете 1 враг,הוסף 1 אויב,أضف 1 عدو,Dodajte 1 neprijatelja,Tambahkan 1 musuh,Voeg 1 vyand by,Gehitu etsaia 1,Дадаць 1 вораг,Afegiu un enemic,Lisa 1 vaenlane,Bættu við 1 óvinum,Pievienojiet 1 ienaidnieku,Pridėti 1 priešą,Pridať 1 nepriateľ,Dodajte 1 sovražnik,Додасться 1 ворога,Thêm 1 kẻ thù
+ROOM_UPGRADE_MORE_ENEMIES,,Add {0} enemies,Ajouter {0} ennemis,Agregar {0} enemigos,{0} Feinde hinzufügen,Aggiungi {0} nemici,Adicionar {0} inimigos,Adicionar {0} inimigos,Добавить {0} Враги,Προσθέστε {0} εχθρούς,{0} düşmanları ekle,Tilføj {0} fjender,Legg til {0} fiender,Lägg till {0} fiender,Voeg {0} vijanden toe,Dodaj {0} wrogów,Lisää {0} vihollisia,{0}敵を追加します,添加{0}敌人,添加{0}敌人,{0} 적을 추가하십시오,Přidat {0} nepřátel,Add {0} ellenségeket,Adăugați {0} dușmani,เพิ่ม {0} ศัตรู,Добавете {0} врагове,הוסף {0} אויבים,أضف {0} الأعداء,Dodajte {0} neprijatelje,Tambahkan {0} musuh,Voeg {0} vyande by,Gehitu {0} etsaiak,Дадаць {0} ворагі,Afegir {0} enemics,Lisa {0} vaenlased,Bæta við {0} óvinum,Pievienot {0} ienaidniekus,Pridėti {0} priešų,Pridať {0} nepriateľov,Dodaj {0} sovražnike,Додасться {0} ворогів,Thêm {0} kẻ thù
+ROOM_UPGRADE_STRONGER_ENEMIES,,Increase enemies strength by {0}%,Augmenter les ennemis la force de {0}%,Aumentar la fuerza de los enemigos por {0}%,Feinde Stärke erhöhen von {0}%,Aumenta la forza dei nemici di {0}%,Aumente a força dos inimigos por {0}%,Aumente a força dos inimigos por {0}%,Увеличьте силу врагов на {0}%,Αυξήστε την αντοχή των εχθρών από το {0}%,Düşman kuvvetini {0}%,Forøg fjendernes styrke ved {0}%,Øk fiender styrke med {0}%,Öka fiender styrka av {0}%,Verhoog vijandensterkte door {0}%,Zwiększ siłę wrogów o {0}%,Lisää vihollisia voimaa {0}%,{0}％による敵の強さを増やす,通过{0}％提高敌人力量,通过{0}％提高敌人力量,{0} %의 적의 강도를 높이십시오.,Zvýšit nepřátele síly {0}%,Növelje az ellenség erejét {0}% -kal,Creșteți puterea dușmanilor cu {0}%,เพิ่มความแข็งแรงของศัตรูโดย {0}%,Увеличете силата на враговете с {0}%,להגדיל את האויבים כוח על ידי {0}%,زيادة قوة الأعداء من قبل {0}٪,Povećajte snagu neprijatelja za {0}%,Tingkatkan kekuatan musuh dengan {0}%,Verhoog vyande sterkte deur {0}%,Etsaien indarra handitu {0}%,Павелічэнне ворагаў сілы па {0}%,Augmenteu la força dels enemics de {0}%,Suurendage vaenlasi tugevust {0}% poolt,Auka óvini styrk með {0}%,Palieliniet ienaidnieku spēku līdz {0}%,Padidinkite priešų stiprumą {0}%,Zvýšiť sily nepriateľov {0}%,Povečajte sovražnikovo moč z {0}%,Збільшиться сила ворогів на {0}%,Tăng sức mạnh của kẻ thù bằng {0}%
+ROOM_UPGRADE_BOSS_FIGHT,,BOSS FIGHT,Combat de patron,LUCHA DEL JEFE,Boss Kampf,Boss lotta,Luta do chefe,Luta do chefe,Бой бой,Αφεντικό,Patron mücadele,Chef kamp,Boss kamp,Chefskamp,Baas vechten,Walka szefa,Pomo taistelu,ボスファイト,老板打架,老板打架,보스 싸움,Boss boj,Főnök harcol,Boss lupta,การต่อสู้ของบอส,Бой,קרב הבוס,بوس القتال,Boss borba,Bos Fight.,Baas veg,Boss borroka,Бос бой,Lluita cap,Boss võitlus,Boss Fight.,Boss cīņa,Boss kova,Boss bojovať,Bosh boj,БИТВА З БОССОМ,Boss Fight.
+ROOM_UPGRADE_TRAPS_FIRST,,Add traps to room,Ajouter des pièges à la chambre,Añadir trampas a la habitación,Fallen Sie Fallen in den Raum hinzufügen,Aggiungi trappole alla stanza,Adicionar armadilhas ao quarto,Adicionar armadilhas ao quarto,Добавьте ловушки в комнату,Προσθέστε παγίδες στο δωμάτιο,Odaya tuzaklar ekleyin,Tilføj fælder til værelse,Legg til feller til rom,Lägg till fällor till rum,Voegvallen toe aan kamer,Dodaj pułapki do pokoju,Lisää ansoja huoneeseen,室にトラップを追加してください,将陷阱添加到房间,将陷阱添加到房间,방에 트랩을 추가하십시오,Přidejte pasti do místnosti,Adjunk hozzá csapdákat a szobába,Adăugați capcane în cameră,เพิ่มกับดักไปที่ห้อง,Добавете капани в стая,הוסף מלכודות לחדר,أضف الفخاخ إلى الغرفة,Dodajte zamke u sobu,Tambahkan jebakan ke kamar,Voeg velle by die kamer,Gehitu tranpak gelara,Дадаць пасткі ў пакой,Afegiu trampes a l'habitació,Lisage ruumis püünised,Bæta við gildrur í herbergi,Pievienojiet slazdus istabu,Įdėkite spąstus į kambarį,Pridajte pasce do miestnosti,Dodajte pasti v sobo,В кімнаті з'являються пастки,Thêm bẫy vào phòng
+ROOM_UPGRADE_TRAPS,,Add more traps to room,Ajouter plus de pièges à la chambre,Añadir más trampas a la habitación,Fügen Sie mehr Fallen in den Raum hinzu,Aggiungi più trappole alla stanza,Adicione mais armadilhas ao quarto,Adicione mais armadilhas ao quarto,Добавить больше ловушек в комнату,Προσθέστε περισσότερες παγίδες στο δωμάτιο,Odaya daha fazla tuzak ekleyin,Tilføj flere fælder til værelse,Legg til flere feller til rom,Lägg till fler fällor till rum,Voeg meer vallen toe aan kamer,Dodaj więcej pułapek do pokoju,Lisää ansoja huoneeseen,室内にもっとトラップを追加してください,添加更多陷阱到房间,添加更多陷阱到房间,방에 더 많은 트랩을 추가하십시오,Přidejte další pasti do místnosti,Adjon hozzá több csapdát a szobába,Adăugați mai multe capcane în cameră,เพิ่มกับดักมากขึ้นไปที่ห้อง,Добавете още капани в стаята,הוסף עוד מלכודות לחדר,إضافة المزيد من الفخاخ إلى الغرفة,Dodajte više zamki u sobu,Tambahkan lebih banyak perangkap ke kamar,Voeg meer lokvalle by die kamer,Gehitu tranpa gehiago gelara,Дадаць больш пасткі ў пакой,Afegiu més trampes a l'habitació,Lisage ruumi rohkem püüniseid,Bættu við fleiri gildrum í herbergi,Pievienojiet vairāk slazdu uz istabu,Pridėti daugiau spąstų į kambarį,Pridajte viac pascí do miestnosti,Dodajte več pasti v sobo,Більше пасток в кімнаті,Thêm nhiều bẫy vào phòng
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-WIN_MESSAGE,,You win! Thanks for playing this demo!,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Loading...,Ти переміг! Дякуємо за гру в це демо!,Loading...
+WIN_MESSAGE,,You win! Thanks for playing this demo! Game would return to main menu in 10 seconds,Vous gagnez! Merci de jouer cette démo! Le jeu retournerait au menu principal en 10 secondes,¡Tú ganas! Gracias por jugar esta demostración! El juego volvería al menú principal en 10 segundos.,"Du gewinnst! Danke, dass Sie diese Demo spielen! Das Spiel würde in 10 Sekunden zum Hauptmenü zurückkehren",Hai vinto! Grazie per aver giocato questa demo! Il gioco tornerebbe al menu principale in 10 secondi,Você ganha! Obrigado por jogar esta demonstração! O jogo retornaria ao menu principal em 10 segundos,Você ganha! Obrigado por jogar esta demonstração! O jogo retornaria ao menu principal em 10 segundos,Ты победил! Спасибо за игру на эту демо! Игра вернется в главное меню за 10 секунд,Κερδίζεις! Ευχαριστώ που παίζετε αυτό το demo! Το παιχνίδι θα επιστρέψει στο κύριο μενού σε 10 δευτερόλεπτα,Sen kazandın! Bu demoyu oynadığınız için teşekkürler! Oyun 10 saniye içinde ana menüye dönecekti,Du vinder! Tak for at spille denne demo! Spillet ville vende tilbage til hovedmenuen i 10 sekunder,Du vinner! Takk for at du spilte denne demoen! Spillet ville gå tilbake til hovedmenyen på 10 sekunder,Du vinner! Tack för att du spelar den här demoniken! Spelet skulle återgå till huvudmenyn på 10 sekunder,Jij wint! Bedankt voor het spelen van deze demo! Spel zou in 10 seconden naar het hoofdmenu terugkeren,Wygrałeś! Dziękujemy za granie tego demo! Gra wróci do menu głównego w ciągu 10 sekund,"Sinä voitat! Kiitos, että pelaat tätä demoa! Peli palaa päävalikkoon 10 sekunnissa",あなたは勝ちます！このデモを弾いてくれてありがとう！ゲームは10秒でメインメニューに戻ります,你赢了！谢谢你玩这个演示！游戏将在10秒内返回主菜单,你赢了！谢谢你玩这个演示！游戏将在10秒内返回主菜单,네가 이겼다! 이 데모를 연주 해 주셔서 감사합니다! 게임은 메인 메뉴로 10 초 안에 돌아갑니다,Vyhráváte! Díky za hraní tohoto dema! Hra by se vrátila do hlavního menu za 10 sekund,"Te nyertél! Köszönjük, hogy ezt a demót játszotta! A játék 10 másodperc alatt visszatér a főmenübe",Ai castigat! Vă mulțumim că ați jucat acest demo! Jocul ar reveni la meniul principal în 10 secunde,คุณชนะ! ขอบคุณที่เล่นการสาธิตนี้! เกมจะกลับไปที่เมนูหลักใน 10 วินาที,"Ти печелиш! Благодаря, че играете тази демо! Играта ще се върне в главното меню за 10 секунди",ניצחת! תודה על ההדגמה הזאת! המשחק יחזור לתפריט הראשי תוך 10 שניות,فزت! شكرا لتشغيل هذا العرض التوضيحي! سوف تعود اللعبة إلى القائمة الرئيسية في 10 ثوان,Pobijedio si! Hvala što ste igrali ovu demo! Igra bi se vratila u glavni meni u 10 sekundi,Kamu menang! Terima kasih telah memainkan demo ini! Game akan kembali ke menu utama dalam 10 detik,Jy wen! Dankie dat jy hierdie demo speel! Spel sal in 10 sekondes na die hoofkieslys terugkeer,Zuk irabazi! Eskerrik asko demo hau jotzeagatik! Game 10 segundotan menu nagusira itzuliko zen,Вы выйграеце! Дзякуй за гульню Demo! Гульня вернецца да галоўнага меню на працягу 10 секунд,Tu guanyes! Gràcies per jugar aquesta demostració! El joc tornaria al menú principal en 10 segons,Sina võidad! Täname selle demo mängimise eest! Mäng naaseks peamenüüsse 10 sekundi jooksul,Þú vinnur! Takk fyrir að spila þessa kynningu! Leikur myndi fara aftur í aðalvalmyndina í 10 sekúndur,"Tu uzvari! Paldies, ka spēlējat šo demo! Spēle atgriezīsies galvenajā izvēlnē 10 sekundēs","Tu laimėjai! Dėkojame, kad žaidėte šį demo! Žaidimas sugrįš į pagrindinį meniu per 10 sekundžių",Vyhral si! Vďaka za hranie tohto demo! Hra by sa vrátila do hlavného menu za 10 sekúnd,Zmagal si! Hvala za igranje tega demo! Igra bi se vrnila v glavni meni v 10 sekundah,Ти переміг! Дякуємо за гру в це демо! Гра повернеться в меню за 10 секунд,Bạn thắng! Cảm ơn đã chơi bản demo này! Trò chơi sẽ trở lại menu chính trong 10 giây
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TUTORIAL_ALL,,"WASD or Left stick - move
+LMB or left shoulder - shoot
+Space or right trigger - dodge
+1, 2, 3 or A Y - select weapon","Wasd ou stick gauche - bouge
+Lmbar ou épaule gauche - tirer
+Trigger de l'espace ou de droite - Dodge
+1, 2, 3 ou une arme sélectionnée","Wasd o salto izquierdo - mover
+LMB o hombro izquierdo - disparar
+Espacio o gatillo derecho - Dodge
+1, 2, 3 o A Y - Seleccionar arma","WASD- oder LINKS-Stick - Bewegung
+Lmb oder linker Schulter - schießen
+Platz oder rechter Trigger - Dodge
+1, 2, 3 oder A y - Waffe auswählen","Wasd o Stick Stick - Move
+LMB o spalla sinistra - Spara
+Spazio o trigger destro - Dodge
+1, 2, 3 o A Y - Seleziona arma","WASD ou caneca esquerda - mover
+Lmb ou ombro esquerdo - atirar
+Espaço ou gatilho direito - Dodge
+1, 2, 3 ou A - Selecionar arma","WASD ou caneca esquerda - mover
+Lmb ou ombro esquerdo - atirar
+Espaço ou gatilho direito - Dodge
+1, 2, 3 ou A - Selecionar arma","WASD или левая палка - двигаться
+LMB или левое плечо - стрелять
+Космос или правый триггер - Dodge
+1, 2, 3 или Y - Выберите оружие","Wasd ή αριστερό ραβδί - κίνηση
+LMB ή αριστερό ώμο - πυροβολούν
+Χώρο ή δεξιά σκανδάλη - Dodge
+1, 2, 3 ή ένα y - επιλέξτε όπλο","Wasd veya sol çubuk - hareket et
+LMB veya Sol Omuz - Çekim
+Uzay veya sağ tetik - DODGE
+1, 2, 3 veya A y - Silah Seç","WASD eller Venstre Stick - Flyt
+LMB eller venstre skulder - skyde
+Rum eller højre trigger - Dodge
+1, 2, 3 eller et Y - Vælg våben","Wasd eller venstre pinne - flytte
+Lmb eller venstre skulder - skyte
+Plass eller høyre utløser - Dodge
+1, 2, 3 eller et y - velg våpen","Wasd eller vänster pinne - flytta
+LMB eller vänster axel - skjuta
+Utrymme eller höger utlösare - Dodge
+1, 2, 3 eller ett Y - Välj vapen","WASD of LINKS STOCK - MOVE
+LMB of linkerschouder - schieten
+Ruimte of rechter trigger - ontwijken
+1, 2, 3 of een Y - Selecteer Wapen","Wasd lub lewy kij - ruszaj
+LMB lub lewe ramię - strzelaj
+Space lub prawy wyzwalacz - Dodge
+1, 2, 3 lub y - Wybierz broń","Wasd tai vasen tikku - liikkua
+LMB tai vasen olkapää - ampua
+Avaruus tai oikea laukaisu - Dodge
+1, 2, 3 tai y - valitse ase","WASDまたは左スティック - 移動
+LMBまたは左肩 - シュート
+スペースまたは右のトリガー - ドッジ
+1,2,3またはy  - 選択武器","芥末或左棍子 - 移动
+LMB或左肩 - 拍摄
+空间或右触发 - 闪避
+1,2,3或Y  - 选择武器","芥末或左棍子 - 移动
+LMB或左肩 - 拍摄
+空间或右触发 - 闪避
+1,2,3或Y  - 选择武器","wasd 또는 왼쪽 스틱 - 이동
+LMB 또는 왼쪽 어깨 - 촬영
+공간 또는 오른쪽 트리거 - 닷지
+1, 2, 3 또는 Y - 무기 선택","Wasd nebo levé hůl - pohyb
+LMB nebo levé rameno - střílet
+Prostor nebo vpravo Trigger - Dodge
+1, 2, 3 nebo Y - Vyberte zbraň","WASD vagy BAL BOTC - MOVE
+LMB vagy bal váll - lő
+Hely vagy jobb trigger - Dodge
+1, 2, 3 vagy y - válassza a fegyvert","WASD sau stânga - mișcare
+LMB sau umăr stâng - trage
+Spațiu sau declanșator drept - Dodge
+1, 2, 3 sau a y - selectați arma","WASD หรือไม้ซ้าย - ย้าย
+LMB หรือไหล่ซ้าย - ยิง
+Space หรือ Trigger ขวา - Dodge
+1, 2, 3 หรือ y - เลือกอาวุธ","Wasd или лявата пръчка - движение
+Lmb или лявото рамо - стреля
+Пространство или дясно спусък - Dodge
+1, 2, 3 или y - Изберете оръжие","WASD או שמאל מקל - לזוז
+LMB או שמאל כתף - לירות
+שטח או טריגר ימין - דודג '
+1, 2, 3 או Y - בחר נשק","WASD أو الأيسر العصا - التحرك
+LMB أو الكتف الأيسر - تبادل لاطلاق النار
+الفضاء أو الزناد الأيمن - دودج
+1، 2، 3 أو ذ - حدد سلاح","Wasd ili lijevi štap - potez
+Lmb ili lijevo rame - pucaj
+Prostora ili desni okidač - Dodge
+1, 2, 3 ili Y - Odaberite oružje","WASD atau LEFT STICK - PINDAH
+LMB atau bahu kiri - Tembak
+Ruang atau pemicu kanan - menghindar
+1, 2, 3 atau y - Pilih Senjata","WASD of linker stok - beweeg
+Lmb of linker skouer - skiet
+Ruimte of Regs Trigger - Dodge
+1, 2, 3 of 'n Y - Kies wapen","WASD edo ezkerreko makila - mugitu
+LMB edo ezkerreko sorbalda - tiro
+Espazioa edo eskuineko trigger - Dodge
+1, 2, 3 edo Y - Aukeratu arma","WASD або левая палка - рухацца
+LMB або левае плячо - страляць
+Space або правы Trigger - Dodge
+1, 2, 3 ці ў - выберыце зброю","WASD o Stick Left: moveu-vos
+LMB o espatlla esquerra - Dispara
+Espai o disparador dret - Dodge
+1, 2, 3 o A Y - Selecciona arma","WASD või vasakpoolne kinni - liikuge
+LMB või vasak õla - tulistada
+Ruum või parem päästik - Dodge
+1, 2, 3 või y - valige relv","WASD eða vinstri stafur - hreyfa
+LMB eða vinstri öxl - skjóta
+Rúm eða hægri kveikja - Dodge
+1, 2, 3 eða Y - Veldu vopn","WASD vai kreisā nūja - pārvietoties
+LMB vai kreisā plecu šaušana
+Kosmoss vai pa labi Trigger - Dodge
+1, 2, 3 vai y - izvēlieties ieroci","Wasd arba kairė lazdelė - juda
+LMB arba kairiojo peties - šaudyti
+Erdvė arba dešinysis trigeris - Dodge
+1, 2, 3 arba y - pasirinkite ginklą","WASD alebo ĽAVÁ STICK
+LMB alebo ľavé rameno - strieľať
+Priestor alebo pravá spúšť - DODGE
+1, 2, 3 alebo Y - Vyberte zbraň","WASD ali levo palico - premikanje
+LMB ali levo ramo - Ustreli
+Prostor ali desni sprožilec - dodge
+1, 2, 3 ali y - Izberite orožje","WASD or Left stick - рух
+LMB or left shoulder - стрільба
+Space or right trigger - ухилитися
+1, 2, 3 or A Y - вибрати зброю","Wasd hoặc stick trái - di chuyển
+Lmb hoặc vai trái - bắn
+Không gian hoặc kích hoạt đúng - Dodge
+1, 2, 3 hoặc A Y - Chọn vũ khí"
+TUTORIAL_UPGRADE,,"This is an upgrade altar!
+Step into this to become stronger!","Ceci est un autel de mise à niveau!
+Entrez dans cela pour devenir plus fort!","Este es un altar de actualización!
+¡Entra en esto para ser más fuerte!","Dies ist ein Upgrade-Altar!
+Treten Sie ein, um stärker zu werden!","Questo è un altare di aggiornamento!
+Entra in questo per diventare più forte!","Este é um altar de atualização!
+Passo para isso para se tornar mais forte!","Este é um altar de atualização!
+Passo para isso para se tornar mais forte!","Это алтарь обновления!
+Стек этого, чтобы стать сильнее!","Αυτό είναι ένα βωμό αναβάθμισης!
+Βήμα σε αυτό για να γίνετε ισχυρότερο!","Bu bir yükseltme sunağı!
+Daha güçlü olmak için buna adım atın!","Dette er et opgraderingsalteret!
+Gå ind i dette for at blive stærkere!","Dette er et oppgraderingsalter!
+Trinn inn i dette for å bli sterkere!","Detta är en uppgraderingsalter!
+Steg i detta för att bli starkare!","Dit is een upgrade altaar!
+Stap hierin om sterker te worden!","To jest ołtarz aktualizacji!
+Wejdź do tego, aby stać się silniejszym!","Tämä on päivitys alttari!
+Astu siihen vahvemmaksi!","これはアップグレード祭壇です！
+これを強くなるためにステップする！","这是一个升级祭坛！
+进入这变得更强壮！","这是一个升级祭坛！
+进入这变得更强壮！","이것은 제단 업그레이드입니다!
+이것을 스텝으로 강하게하십시오!","Toto je upgrade oltář!
+Vstoupit do toho, aby se stal silnějším!","Ez egy frissítési oltár!
+Lépj bele ebbe, hogy erősebbé váljon!","Acesta este un altar de upgrade!
+Intrați în acest lucru pentru a deveni mai puternic!","นี่คือแท่นอัพเกรด!
+ก้าวเข้าสู่สิ่งนี้เพื่อให้แข็งแกร่งขึ้น!","Това е ъпгрейд олтар!
+Влезте в това, за да станете по-силни!","זוהי מזבח שדרוג!
+צעד לתוך זה כדי להיות חזק יותר!","هذا هو مذبح ترقية!
+خطوة إلى هذا ليصبح أقوى!","Ovo je oltar nadogradnje!
+Uđite u ovo da biste postali jači!","Ini adalah altar upgrade!
+Masuklah ini menjadi lebih kuat!","Dit is 'n opgradering van altaar!
+Stap hierin om sterker te word!","Hau aldare berritua da!
+Urratsa indartsuagoa izateko!","Гэта абнаўленне алтар!
+Крок у гэта, каб стаць мацней!","Aquest és un altar d'actualització!
+Entra en això per esdevenir més fort!","See on uuendamise altar!
+Astuge sellele, et saada tugevamaks!","Þetta er uppfærsla altari!
+Skref í þetta til að verða sterkari!","Tas ir jauninājums altāris!
+Soli uz to, lai kļūtu spēcīgāks!","Tai atnaujinti aukurą!
+Žingsnis į tai tapti stipresnis!","Toto je aktualizačný oltár!
+Krok do toho, aby ste sa stali silnejšími!","To je nadgradnja oltarja!
+Stopite v to, da postanete močnejši!","Це алтарь апгрейдів!
+Стань на нього щоб стати сильнішим!","Đây là một bàn thờ nâng cấp!
+Bước vào điều này để trở nên mạnh mẽ hơn!"
