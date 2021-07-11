@@ -21,6 +21,7 @@ public class Health : MonoBehaviour {
 
 	[Header("Refs"), Space]
 	[SerializeField] GameObject parentToDestroy;
+	[SerializeField] GameObject floatingTextPrefab;
 
 #if UNITY_EDITOR
 	private void OnValidate() {
@@ -49,12 +50,20 @@ public class Health : MonoBehaviour {
 	}
 
 	public void ChangeHp(float delta) {
+		FloatingText text = Instantiate(floatingTextPrefab, transform.position + Vector3.up * 0.5f, Quaternion.identity).GetComponent< FloatingText>();
+		text.Play($"{Math.Round(delta)}", Color.white, false);
+
 		bool isNeedLastChance = isPlayer && 1 < currHealth && currHealth + delta <= 0;
 
-		if (isNeedLastChance)
+		if (isNeedLastChance) {
+			text = Instantiate(floatingTextPrefab, transform.position + Vector3.up * 1f, Quaternion.identity).GetComponent<FloatingText>();
+			text.Play("LAST_CHANCE", Color.red, false);
+
 			currHealth = 1;
-		else
+		}
+		else {
 			currHealth = Mathf.Clamp(currHealth + delta, 0, maxHealth);
+		}
 
 		if(healthBar)
 			healthBar.UpdateCurr(currHealth);

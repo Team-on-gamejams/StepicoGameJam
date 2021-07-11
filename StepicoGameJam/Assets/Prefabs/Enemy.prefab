@@ -365,6 +365,8 @@ MonoBehaviour:
   playerHealthUI: {fileID: 0}
   onDieClip: {fileID: 8300000, guid: 2faab91faa8135b4cb38f4ebba2180d0, type: 3}
   parentToDestroy: {fileID: 1058844492631541523}
+  floatingTextPrefab: {fileID: 3523908261357506118, guid: a5b46d8a9cb46094694e8ef3f3ce0869,
+    type: 3}
 --- !u!61 &2565552603449154700
 BoxCollider2D:
   m_ObjectHideFlags: 0

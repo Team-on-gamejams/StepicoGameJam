@@ -17,8 +17,8 @@ public class FloatingText : MonoBehaviour {
 	}
 #endif
 
-	public void Play(string textKey, Color color) {
-		textField.text = Polyglot.Localization.Get(textKey);
+	public void Play(string textKey, Color color, bool isKey) {
+		textField.text = isKey ? Polyglot.Localization.Get(textKey) : textKey;
 		textField.color = color;
 
 		textField.color = textField.color.SetA(0.0f);
@@ -38,20 +38,20 @@ public class FloatingText : MonoBehaviour {
 		});
 	}
 
-	public void Play(string textKey) {
-		Play(textKey, Color.white);
+	public void Play(string textKey, bool isKey) {
+		Play(textKey, Color.white, isKey);
 	}
 
-	public static FloatingText PlayFloatingText(Vector3 worldPos, string textKey, Color color) {
+	public static FloatingText PlayFloatingText(Vector3 worldPos, string textKey, Color color, bool isKey) {
 		FloatingText floatingText = Instantiate(TemplateGameManager.Instance.floatingTextDefaultPrefab, worldPos, Quaternion.identity, null).GetComponent<FloatingText>();
 
-		floatingText.Play(textKey, color);
+		floatingText.Play(textKey, color, isKey);
 
 		return floatingText;
 	}
 
-	public static FloatingText PlayFloatingText(Vector3 worldPos, string textKey) {
-		return PlayFloatingText(worldPos, textKey, Color.white);
+	public static FloatingText PlayFloatingText(Vector3 worldPos, string textKey, bool isKey) {
+		return PlayFloatingText(worldPos, textKey, Color.white, isKey);
 	}
 
 	static LTDescr StayWorldPos(GameObject obj, float time, Vector3 localPosReturn) {

@@ -1,6 +1,6 @@
 Game page - https://teamon.itch.io/curse-of-the-saviks-room
 Source code - https://github.com/savik-games/StepicoGameJam
-Used assets - https://github.com/Team-on/UnityGameTemplate/wiki/Used-assets
+Used assets - https://github.com/savik-games/StepicoGameJam#used-assets
 
 Available in Windows, OSX, Linux, Android and Web 
 If you encounter any problem, please leave a issue! 
@@ -11,6 +11,16 @@ If you get "this package is from an unidentified developer" right click (or cont
 
 Linux Version Notes:
 Make sure to set the x86_64 as executable before running.
+
+# Features:
+ * 3 different ranged weapons
+ * 3 different melee weapons
+ * Gamepad and keyboard controls
+ * Multilanguage support
+ * 3 enemy types
+ * 1 boss
+ * Player and level progression
+ * 8 hand-designed levels
 
 # Cheatcodes
  * Press ` to toggle debug texts
