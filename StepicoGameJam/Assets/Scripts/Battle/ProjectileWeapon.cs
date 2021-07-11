@@ -89,7 +89,7 @@ public class ProjectileWeapon : MonoBehaviour {
 
 	public void ForceStopAttack() {
 		if (currProjectile)
-			Destroy(currProjectile);
+			Destroy(currProjectile.gameObject);
 		isAttacking = false;
 		currBufferedAttacks = 0;
 	}

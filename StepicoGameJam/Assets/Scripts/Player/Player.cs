@@ -187,7 +187,5 @@ public class Player : MonoBehaviour {
 		//	else
 		//		meleeWeapons[i].Disable();
 		//}
-
-		Debug.Log($"Melee: {selectedMeleeWeapon}, Projectile: {selectedProjectileWeapon}");
 	}
 }
