@@ -133,5 +133,10 @@ PrefabInstance:
       propertyPath: InitialModule.startColor.minColor.r
       value: 0.39607844
       objectReference: {fileID: 0}
+    - target: {fileID: 6451240563693145209, guid: 3e9f3bf4650322a4dbce3e70a09d5891,
+        type: 3}
+      propertyPath: onLaunchClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fad86c54c5338354cbb21a5b523790dd, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e9f3bf4650322a4dbce3e70a09d5891, type: 3}

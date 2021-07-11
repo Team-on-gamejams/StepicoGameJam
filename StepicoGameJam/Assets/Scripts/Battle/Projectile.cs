@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour {
+	[Header("Audio"), Space]
+	[SerializeField] AudioClip onLaunchClip;
+	[SerializeField] AudioClip onHitEnemyClip;
+	[SerializeField] AudioClip onHitPlayerClip;
+	[SerializeField] AudioClip onHitEnvironmentClip;
+
 	[Header("Refs"), Space]
 	[SerializeField] Rigidbody2D rb;
 	[SerializeField] SpriteRenderer sr;
@@ -56,6 +62,23 @@ public class Projectile : MonoBehaviour {
 			health.ChangeHp(-damage);
 		}
 
+		switch (collision.gameObject.layer) {
+			case UnityConstants.Layers.Hitbox:
+				switch (collision.transform.parent.gameObject.layer) {
+					case UnityConstants.Layers.Enemy:
+						AudioManager.Instance.Play(onHitEnemyClip);
+						break;
+					case UnityConstants.Layers.Player:
+						AudioManager.Instance.Play(onHitPlayerClip);
+						break;
+				}
+				break;
+
+			case UnityConstants.Layers.Environment:
+				AudioManager.Instance.Play(onHitEnvironmentClip);
+				break;
+		}
+
 		if (collision.gameObject.layer == UnityConstants.Layers.Environment || !isPiercing) 
 			OnHit();
 	}
@@ -73,6 +96,8 @@ public class Projectile : MonoBehaviour {
 		rb.isKinematic = false;
 
 		rb.velocity = transform.right.normalized * flySpeed;
+
+		AudioManager.Instance.Play(onLaunchClip);
 	}
 
 	void OnHit() {

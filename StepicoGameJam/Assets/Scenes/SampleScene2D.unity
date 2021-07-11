@@ -1581,6 +1581,7 @@ MonoBehaviour:
   - {fileID: 363709201}
   - {fileID: 551818047}
   winMessageKey: WIN_MESSAGE
+  gameClip: {fileID: 8300000, guid: 8df7cb9748fe9784c882baf56c5d62a1, type: 3}
 --- !u!1 &535654390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,7 +1843,7 @@ PrefabInstance:
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
@@ -3376,6 +3377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae376c69e7984c744b80b57fc90ddb56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onUpgradeClip: {fileID: 8300000, guid: 22ffe96e92d2aee44a91f6565fef09e4, type: 3}
   mover: {fileID: 1439449836}
   cameraFollowAnchor: {fileID: 1031949697}
   weaponMouseFollow: {fileID: 1598063384}
@@ -3701,7 +3703,7 @@ PrefabInstance:
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
@@ -9155,7 +9157,7 @@ MonoBehaviour:
   doodgeCooldown: 1
   rb: {fileID: 1439449835}
   circleCollider: {fileID: 1439449837}
-  hitbox: {fileID: 1651362456}
+  hitbox: {fileID: 1651362458}
   dodgePs: {fileID: 1148786645}
 --- !u!58 &1439449837
 CircleCollider2D:
@@ -9388,7 +9390,7 @@ PrefabInstance:
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
@@ -9869,8 +9871,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1651362455}
-  - component: {fileID: 1651362456}
   - component: {fileID: 1651362457}
+  - component: {fileID: 1651362458}
   m_Layer: 9
   m_Name: Hitbox
   m_TagString: Untagged
@@ -9892,22 +9894,6 @@ Transform:
   m_Father: {fileID: 1439449834}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1651362456
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651362454}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.2}
-  serializedVersion: 2
-  m_Radius: 0.15
 --- !u!114 &1651362457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9924,7 +9910,34 @@ MonoBehaviour:
   maxHealth: 100
   healthBar: {fileID: 0}
   playerHealthUI: {fileID: 98941774}
+  onDieClip: {fileID: 8300000, guid: 2faab91faa8135b4cb38f4ebba2180d0, type: 3}
   parentToDestroy: {fileID: 1439449833}
+--- !u!61 &1651362458
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651362454}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00033919513, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.27737376, y: 0.5429687}
+  m_EdgeRadius: 0
 --- !u!1 &1660036147
 GameObject:
   m_ObjectHideFlags: 0
@@ -10193,7 +10206,7 @@ PrefabInstance:
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
@@ -10667,7 +10680,7 @@ PrefabInstance:
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
@@ -10970,7 +10983,7 @@ PrefabInstance:
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
@@ -11603,7 +11616,7 @@ PrefabInstance:
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1058844492631541520, guid: 6dbb55681ebe1044eb516f2e45d3af63,
         type: 3}

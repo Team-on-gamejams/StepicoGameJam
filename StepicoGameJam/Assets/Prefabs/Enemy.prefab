@@ -252,10 +252,13 @@ MonoBehaviour:
   endSize: 1
   damage: 15
   flySpeed: 7
+  maxFlyDist: 30
+  isPiercing: 0
   projectilePrefab: {fileID: 1283814536103085733, guid: 69285b0127d0c4c4a9ed9f1ccaa9e4fc,
     type: 3}
   bulletSpawnPos: {fileID: 6786447534637916781}
   sr: {fileID: 2755856938511218907}
+  uiSlot: {fileID: 0}
 --- !u!212 &2755856938511218907
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -370,6 +373,8 @@ MonoBehaviour:
   isPlayer: 0
   maxHealth: 100
   healthBar: {fileID: 5109664656809790231}
+  playerHealthUI: {fileID: 0}
+  onDieClip: {fileID: 8300000, guid: 2faab91faa8135b4cb38f4ebba2180d0, type: 3}
   parentToDestroy: {fileID: 1058844492631541523}
 --- !u!1001 &8961508171596678429
 PrefabInstance:

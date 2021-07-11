@@ -10,11 +10,18 @@ public class RoomManager : MonoBehaviour {
 	[SerializeField] List<Room> roomsSequence = new List<Room>();
 	[SerializeField] string winMessageKey = "WIN_MESSAGE";
 
+	[Header("Audio"), Space]
+	[SerializeField] AudioClip gameClip;
+	AudioSource gameas;
+
+
 	int currRoomId = 0;
 	int aliveEnemies;
 
 	void Start() {
 		OnStartNewRoom();
+
+		gameas = AudioManager.Instance.PlayLoop(gameClip);
 	}
 
 	public void OnStartNewRoom() {
@@ -36,7 +43,13 @@ public class RoomManager : MonoBehaviour {
 			
 			Debug.Log($"{string.Format(Localization.Get(CurrRoom.upgradeStringKey), CurrRoom.upgradeValue)}");
 
-			LeanTween.delayedCall(gameObject, 1.0f, () => {
+			AudioManager.Instance.ChangeASVolume(gameas, 0.25f, 0.5f);
+
+			LeanTween.delayedCall(gameObject, 2.0f, () => {
+				GameManager.Instance.player.ApplyUpgrade(PlayerUpgradeEnum.MoreHPAndHeal);
+			});
+
+			LeanTween.delayedCall(gameObject, 3.0f, () => {
 				OnUpgradeSelected();
 			});
 		}
@@ -44,6 +57,8 @@ public class RoomManager : MonoBehaviour {
 
 	public void OnUpgradeSelected() {
 		if(currRoomId != roomsSequence.Count) {
+			AudioManager.Instance.ChangeASVolume(gameas, 1.0f, 1.0f);
+
 			LeanTween.delayedCall(gameObject, 1.0f, () => {
 				CurrRoom.gameObject.SetActive(false);
 				OnStartNewRoom();

@@ -57,7 +57,7 @@ public class LoadingBar : MonoBehaviour {
 	}
 
 	private void Update() {
-		if (isLoadingEnd && InputEx.IsAnyKeyPressedThisFrame()) 
+		if (isLoadingEnd/* && InputEx.IsAnyKeyPressedThisFrame()*/) 
 			OnAnyKeyPress();
 	}
 

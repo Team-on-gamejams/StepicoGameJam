@@ -16,6 +16,9 @@ public class PlayerMoving : MonoBehaviour {
 	[SerializeField] float doodgeTime = 0.2f;
 	[SerializeField] float doodgeCooldown = 1.0f;
 
+	[Header("Audio"), Space]
+	[SerializeField] AudioClip dodgeClip;
+
 	[Header("Refs"), Space]
 	[SerializeField] Rigidbody2D rb;
 	[SerializeField] CircleCollider2D circleCollider;
@@ -63,6 +66,7 @@ public class PlayerMoving : MonoBehaviour {
 
 				hitbox.enabled = false;
 
+				AudioManager.Instance.Play(dodgeClip);
 				dodgePs.Play();
 
 				isDodging = true;

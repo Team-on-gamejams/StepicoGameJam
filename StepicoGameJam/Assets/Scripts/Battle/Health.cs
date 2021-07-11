@@ -14,6 +14,9 @@ public class Health : MonoBehaviour {
 	[SerializeField] HealthBar healthBar;
 	[SerializeField] PlayerHealthUI playerHealthUI;
 
+	[Header("Audio"), Space]
+	[SerializeField] AudioClip onDieClip;
+
 	[Header("Refs"), Space]
 	[SerializeField] GameObject parentToDestroy;
 
@@ -65,6 +68,8 @@ public class Health : MonoBehaviour {
 		if (isDead)
 			return;
 		isDead = true;
+
+		AudioManager.Instance.Play(onDieClip);
 
 		if (isPlayer) {
 			Destroy(parentToDestroy);

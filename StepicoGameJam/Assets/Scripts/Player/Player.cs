@@ -10,6 +10,9 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour {
 	public float Radius => mover.Radius;
 
+	[Header("Audio"), Space]
+	[SerializeField] AudioClip onUpgradeClip;
+
 	[Header("Refs"), Space]
 	public PlayerMoving mover;
 	[SerializeField] CameraFollowAnchor cameraFollowAnchor;
@@ -43,6 +46,8 @@ public class Player : MonoBehaviour {
 	}
 
 	public void ApplyUpgrade(PlayerUpgradeEnum playerUpgradeEnum) {
+		AudioManager.Instance.Play(onUpgradeClip);
+
 		switch (playerUpgradeEnum) {
 			case PlayerUpgradeEnum.MoreHPAndHeal:
 				health.ReInitHealth(health.MaxHealth * 1.5f, health.MaxHealth * 1.5f);

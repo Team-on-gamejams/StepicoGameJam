@@ -48,6 +48,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46f9f8ece8e9c549b7cf086ff099082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onLaunchClip: {fileID: 8300000, guid: 7104e8c4bfba554488f7039fe197ffdc, type: 3}
+  onHitEnemyClip: {fileID: 8300000, guid: 817cfee227e3c1143893eb1826da9b5a, type: 3}
+  onHitPlayerClip: {fileID: 8300000, guid: 9a49e8c0ceeae7f41826f2871bc26a2c, type: 3}
+  onHitEnvironmentClip: {fileID: 8300000, guid: 61ff705f1eccf534d99a90109b08be82,
+    type: 3}
   rb: {fileID: 2619928824207072985}
   sr: {fileID: 2619928824207072990}
   collider: {fileID: 2619928824207072984}
