@@ -46,6 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileWeapon: {fileID: 2483008733577441450}
+  movingPart: {fileID: 1629629203728697890}
+  radius: 0.33
+  maxAngularSpeed: 180
 --- !u!114 &4689064486324112970
 MonoBehaviour:
   m_ObjectHideFlags: 0

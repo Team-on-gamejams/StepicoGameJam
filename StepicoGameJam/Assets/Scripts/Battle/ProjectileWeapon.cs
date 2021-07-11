@@ -5,8 +5,8 @@ using UnityEngine;
 public class ProjectileWeapon : MonoBehaviour {
 	[Header("Values"), Space]
 	[SerializeField] bool isPlayerWeapon = false;
-	[SerializeField] float startupTime = 0.5f;
-	[SerializeField] float cooldownTime = 1.0f;
+	public float startupTime = 0.5f;
+	public float cooldownTime = 1.0f;
 	[Space]
 	[SerializeField] int maxBufferedAttacks = 2;
 	[Space]
@@ -14,9 +14,9 @@ public class ProjectileWeapon : MonoBehaviour {
 	[SerializeField] float endSize = 1.0f;
 
 	[Header("Values - bullet")]
-	[SerializeField] float damage = 25;
-	[SerializeField] float flySpeed = 10.0f;
-	[SerializeField] float maxFlyDist = 30.0f;
+	public float damage = 25;
+	public float flySpeed = 10.0f;
+	public float maxFlyDist = 30.0f;
 	[SerializeField] bool isPiercing = false;
 
 	[Header("Refs"), Space]

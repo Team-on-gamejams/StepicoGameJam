@@ -10,6 +10,11 @@ public class RoomManager : MonoBehaviour {
 	[SerializeField] List<Room> roomsSequence = new List<Room>();
 	[SerializeField] string winMessageKey = "WIN_MESSAGE";
 
+	[Header("Upgrader"), Space]
+	[SerializeField] List<GameObject> upgradePrefabs = new List<GameObject>();
+	List<GameObject> upgradePrefabsPool = new List<GameObject>();
+
+
 	[Header("Audio"), Space]
 	[SerializeField] AudioClip gameClip;
 	AudioSource gameas;
@@ -39,19 +44,24 @@ public class RoomManager : MonoBehaviour {
 			Debug.Log($"{Localization.Get(winMessageKey)}");
 		}
 		else {
-			++currRoomId;
-			
-			Debug.Log($"{string.Format(Localization.Get(CurrRoom.upgradeStringKey), CurrRoom.upgradeValue)}");
-
 			AudioManager.Instance.ChangeASVolume(gameas, 0.25f, 0.5f);
 
-			LeanTween.delayedCall(gameObject, 2.0f, () => {
-				GameManager.Instance.player.ApplyUpgrade(PlayerUpgradeEnum.MoreHPAndHeal);
-			});
+			SpawnNewAltar(0, upgradePrefabs[0]);
+			for (int i = 1; i < 4; ++i) {
+				if(upgradePrefabsPool.Count == 0) {
+					for (int j = 1; j < upgradePrefabs.Count; ++j) {
+						upgradePrefabsPool.Add(upgradePrefabs[j]);
+					}
+				}
 
-			LeanTween.delayedCall(gameObject, 3.0f, () => {
-				OnUpgradeSelected();
-			});
+				int rand = Random.Range(0, upgradePrefabsPool.Count);
+				SpawnNewAltar(i, upgradePrefabsPool[rand]);
+				upgradePrefabsPool.RemoveAt(rand);
+			}
+
+			++currRoomId;
+			//TODO:
+			Debug.Log($"{string.Format(Localization.Get(CurrRoom.upgradeStringKey), CurrRoom.upgradeValue)}");
 		}
 	}
 
@@ -64,6 +74,12 @@ public class RoomManager : MonoBehaviour {
 				OnStartNewRoom();
 			});
 		}
+	}
+
+	void SpawnNewAltar(int id, GameObject prefab) {
+		GameObject instantitatedAltar = Instantiate(prefab, CurrRoom.upgareSpawnPoints[id].position, Quaternion.identity, CurrRoom.transform);
+		UpgradeAltar altar = instantitatedAltar.GetComponent<UpgradeAltar>();
+		altar.onUpgradeSelected += OnUpgradeSelected;
 	}
 
 	void OnEnemyDie(Enemy enemy) {

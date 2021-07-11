@@ -53,16 +53,32 @@ public class Player : MonoBehaviour {
 				health.ReInitHealth(health.MaxHealth * 1.5f, health.MaxHealth * 1.5f);
 				break;
 			case PlayerUpgradeEnum.UnlockNewWeaponRange:
+				//TODO:
 				break;
 			case PlayerUpgradeEnum.UnlockNewWeaponMelee:
+				//TODO:
 				break;
 			case PlayerUpgradeEnum.MoreWeaponDamage:
+				foreach (var weapon in projectileWeapons) {
+					weapon.damage *= 1.5f;
+				}
+				//TODO:
 				break;
 			case PlayerUpgradeEnum.LessWeaponCDAndMoreBulletSpeed:
+				foreach (var weapon in projectileWeapons) {
+					weapon.cooldownTime /= 1.5f;
+					weapon.startupTime /= 1.5f;
+					weapon.flySpeed *= 1.5f;
+				}
 				break;
 			case PlayerUpgradeEnum.MorePlayerSpeed:
+				mover.startSpeed *= 1.5f;
+				mover.maxSpeed *= 1.5f;
+				mover.timeToMaxSpeed *= 1.5f;
 				break;
 			case PlayerUpgradeEnum.BetterDodge:
+				mover.dodgeForce *= 1.5f;
+				mover.dodgeCooldown /= 1.5f;
 				break;
 			default:
 				Debug.Log("Wrong upgrade type");

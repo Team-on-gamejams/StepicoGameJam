@@ -6,15 +6,15 @@ public class PlayerMoving : MonoBehaviour {
 	public float Radius => circleCollider.radius;
 
 	[Header("Values"), Space]
-	[SerializeField] float startSpeed = 4.0f;
-	[SerializeField] float maxSpeed = 6.0f;
-	[SerializeField] float timeToMaxSpeed = 1.0f;
+	public float startSpeed = 4.0f;
+	public float maxSpeed = 6.0f;
+	public float timeToMaxSpeed = 1.0f;
 
 	[Header("Dodge"), Space]
 	[SerializeField] WeaponUISlot dodgeUI;
-	[SerializeField] float dodgeForce = 10f;
-	[SerializeField] float doodgeTime = 0.2f;
-	[SerializeField] float doodgeCooldown = 1.0f;
+	public float dodgeForce = 10f;
+	public float doodgeTime = 0.2f;
+	public float dodgeCooldown = 1.0f;
 
 	[Header("Audio"), Space]
 	[SerializeField] AudioClip dodgeClip;
@@ -46,7 +46,7 @@ public class PlayerMoving : MonoBehaviour {
 #endif
 
 	private void Awake() {
-		currDodgeCooldown = doodgeCooldown;
+		currDodgeCooldown = dodgeCooldown;
 	}
 
 	private void Update() {
@@ -56,10 +56,10 @@ public class PlayerMoving : MonoBehaviour {
 		if (isDodging)
 			dodgeUI.UpdateCooldownVisual(1.0f);
 		else
-			dodgeUI.UpdateCooldownVisual(1.0f - Mathf.Clamp01(currDodgeCooldown / doodgeCooldown));
+			dodgeUI.UpdateCooldownVisual(1.0f - Mathf.Clamp01(currDodgeCooldown / dodgeCooldown));
 
 		if (isNeedDodge) {
-			if (currDodgeCooldown >= doodgeCooldown && moveVector != Vector2.zero) {
+			if (currDodgeCooldown >= dodgeCooldown && moveVector != Vector2.zero) {
 				currDodgeCooldown = 0;
 
 				dodgeVector = moveVector;
