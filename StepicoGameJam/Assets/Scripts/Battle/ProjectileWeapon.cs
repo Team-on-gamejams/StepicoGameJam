@@ -21,6 +21,7 @@ public class ProjectileWeapon : MonoBehaviour {
 	[SerializeField] GameObject projectilePrefab;
 	[SerializeField] Transform bulletSpawnPos;
 	[SerializeField] SpriteRenderer sr;
+	[SerializeField] WeaponUISlot uiSlot;
 
 #if UNITY_EDITOR
 	private void OnValidate() {
@@ -38,6 +39,13 @@ public class ProjectileWeapon : MonoBehaviour {
 
 	private void Update() {
 		currTimer += Time.deltaTime;
+
+		if (uiSlot) {
+			if(currProjectile == null)
+				uiSlot.UpdateCooldownVisual(1.0f - Mathf.Clamp01(currTimer / cooldownTime));
+			else
+				uiSlot.UpdateCooldownVisual(1.0f);
+		}
 
 		if (currProjectile != null) {
 			currProjectile.transform.localScale = Vector3.one * LeanTween.easeOutBack(startSize, endSize, Mathf.Clamp01(currTimer / startupTime));
@@ -87,14 +95,18 @@ public class ProjectileWeapon : MonoBehaviour {
 	}
 
 	public void Enable() {
-		enabled = true;
 		sr.enabled = true;
+
+		if(uiSlot)
+			uiSlot.Enable();
 	}
 
 	public void Disable() {
-		enabled = false;
 		sr.enabled = false;
-	
+
+		if(uiSlot)
+			uiSlot.Disable();
+
 		ForceStopAttack();
 	}
 

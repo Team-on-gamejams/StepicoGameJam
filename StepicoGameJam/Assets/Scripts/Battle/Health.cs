@@ -10,6 +10,7 @@ public class Health : MonoBehaviour {
 
 	[Header("UI"), Space]
 	[SerializeField] HealthBar healthBar;
+	[SerializeField] PlayerHealthUI playerHealthUI;
 
 	[Header("Refs"), Space]
 	[SerializeField] GameObject parentToDestroy;
@@ -18,6 +19,8 @@ public class Health : MonoBehaviour {
 	private void OnValidate() {
 		if (!healthBar)
 			healthBar = GetComponentInChildren<HealthBar>();
+		if (!playerHealthUI)
+			playerHealthUI = GetComponentInChildren<PlayerHealthUI>();
 	}
 #endif
 
@@ -29,6 +32,8 @@ public class Health : MonoBehaviour {
 
 		if (healthBar)
 			healthBar.Init(currHealth, maxHealth, 50);
+		if (playerHealthUI)
+			playerHealthUI.Init(currHealth, maxHealth);
 	}
 
 	public void ChangeHp(float delta) {
@@ -41,6 +46,8 @@ public class Health : MonoBehaviour {
 
 		if(healthBar)
 			healthBar.UpdateCurr(currHealth);
+		if(playerHealthUI)
+			playerHealthUI.UpdateCurr(currHealth);
 
 		if (currHealth == 0) {
 			Die();

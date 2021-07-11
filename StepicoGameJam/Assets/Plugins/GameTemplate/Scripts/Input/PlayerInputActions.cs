@@ -542,7 +542,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""id"": ""fdaee102-0adb-4d9e-a910-00146a036e40"",
                     ""path"": ""<Mouse>/scroll/y"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Invert"",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""ScrollProjectileGamepad"",
                     ""isComposite"": false,
