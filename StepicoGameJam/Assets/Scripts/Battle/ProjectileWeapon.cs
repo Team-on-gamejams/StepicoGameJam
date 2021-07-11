@@ -16,6 +16,8 @@ public class ProjectileWeapon : MonoBehaviour {
 	[Header("Values - bullet")]
 	[SerializeField] float damage = 25;
 	[SerializeField] float flySpeed = 10.0f;
+	[SerializeField] float maxFlyDist = 30.0f;
+	[SerializeField] bool isPiercing = false;
 
 	[Header("Refs"), Space]
 	[SerializeField] GameObject projectilePrefab;
@@ -36,6 +38,10 @@ public class ProjectileWeapon : MonoBehaviour {
 	float currTimer = 0.0f;
 
 	Projectile currProjectile;
+
+	private void Awake() {
+		currTimer = cooldownTime;
+	}
 
 	private void Update() {
 		currTimer += Time.deltaTime;
@@ -70,7 +76,7 @@ public class ProjectileWeapon : MonoBehaviour {
 
 				currProjectile.transform.localScale = Vector3.one * startSize;
 
-				currProjectile.Init(isPlayerWeapon, damage, flySpeed);
+				currProjectile.Init(isPlayerWeapon, damage, flySpeed, maxFlyDist, isPiercing);
 			}
 		}
 	}

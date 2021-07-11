@@ -18,33 +18,35 @@ public class HealthBarPart : MonoBehaviour {
 		firstBar.minValue = secondBar.minValue = 0;
 		firstBar.maxValue = secondBar.maxValue = max;
 
-		UpdateVisuals(true);
+		UpdateVisuals(true, currValue);
 	}
 
 	public void ChangeValues(float curr) {
-		currValue = curr;
-
-		UpdateVisuals(false);
+		UpdateVisuals(false, curr);
 	}
 
-	void UpdateVisuals(bool isForce) {
+	void UpdateVisuals(bool isForce, float newValue) {
 		if (isForce) {
 			firstBar.value = secondBar.value = currValue;
 		}
 		else {
-			LeanTween.cancel(gameObject);
+			if (newValue != currValue || newValue != currValue) {
+				currValue = newValue;
+				
+				LeanTween.cancel(gameObject);
 
-			LeanTween.value(firstBar.value, currValue, 0.2f)
+				LeanTween.value(firstBar.value, currValue, 0.2f)
 				.setEase(LeanTweenType.linear)
-				.setOnUpdate((float val)=> {
+				.setOnUpdate((float val) => {
 					firstBar.value = val;
 				});
 
-			LeanTween.value(secondBar.value, currValue, 0.7f)
+				LeanTween.value(secondBar.value, currValue, 0.7f)
 				.setEase(LeanTweenType.easeInOutQuart)
 				.setOnUpdate((float val) => {
 					secondBar.value = val;
 				});
+			}
 		}
 	}
 }

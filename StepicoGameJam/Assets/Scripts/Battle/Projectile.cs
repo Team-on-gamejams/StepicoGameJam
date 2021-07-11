@@ -12,6 +12,9 @@ public class Projectile : MonoBehaviour {
 	bool isPlayerWeapon = false;
 	float damage = 25;
 	float flySpeed = 10;
+	float maxFlyDist = 30.0f;
+	bool isPiercing = false;
+	float flyDist = 0;
 
 #if UNITY_EDITOR
 	private void OnValidate() {
@@ -31,10 +34,18 @@ public class Projectile : MonoBehaviour {
 		rb.isKinematic = true;
 	}
 
+	private void FixedUpdate() {
+		flyDist += rb.velocity.magnitude * Time.deltaTime;
+
+		if(flyDist >= maxFlyDist) {
+			OnHit();
+		}
+	}
+
 	private void OnTriggerEnter2D(Collider2D collision) {
 		if(
-			(isPlayerWeapon && collider.gameObject.layer == UnityConstants.Layers.Player) ||
-			(!isPlayerWeapon && collider.gameObject.layer == UnityConstants.Layers.Enemy)
+			(isPlayerWeapon && collision.gameObject.layer == UnityConstants.Layers.Player) ||
+			(!isPlayerWeapon && collision.gameObject.layer == UnityConstants.Layers.Enemy)
 		) {
 			return;
 		}
@@ -45,20 +56,16 @@ public class Projectile : MonoBehaviour {
 			health.ChangeHp(-damage);
 		}
 
-		collider.enabled = false;
-		sr.enabled = false;
-		rb.velocity = Vector2.zero;
-		rb.isKinematic = true;
-
-		hitps.Play();
-
-		Destroy(gameObject, hitps.main.startLifetime.constantMax * hitps.main.startLifetimeMultiplier + hitps.main.duration + Random.Range(1.0f, 2.0f));
+		if (collision.gameObject.layer == UnityConstants.Layers.Environment || !isPiercing) 
+			OnHit();
 	}
 
-	public void Init(bool isPlayerWeapon, float damage, float flySpeed) {
+	public void Init(bool isPlayerWeapon, float damage, float flySpeed, float maxFlyDist, bool isPiercing) {
 		this.isPlayerWeapon = isPlayerWeapon;
 		this.damage = damage;
 		this.flySpeed = flySpeed;
+		this.maxFlyDist = maxFlyDist;
+		this.isPiercing = isPiercing;
 	}
 
 	public void Launch() {
@@ -66,5 +73,15 @@ public class Projectile : MonoBehaviour {
 		rb.isKinematic = false;
 
 		rb.velocity = transform.right.normalized * flySpeed;
+	}
+
+	void OnHit() {
+		collider.enabled = false;
+		sr.enabled = false;
+		rb.velocity = Vector2.zero;
+		rb.isKinematic = true;
+
+		hitps.Play();
+		Destroy(gameObject, hitps.main.startLifetime.constantMax * hitps.main.startLifetimeMultiplier + hitps.main.duration + Random.Range(1.0f, 2.0f));
 	}
 }

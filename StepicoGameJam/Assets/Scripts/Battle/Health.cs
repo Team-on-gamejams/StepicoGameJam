@@ -61,10 +61,13 @@ public class Health : MonoBehaviour {
 
 		if (isPlayer) {
 			Destroy(parentToDestroy);
+
+			LeanTween.delayedCall(gameObject, 1.0f, () => {
+				SceneLoader.Instance.LoadScene(TemplateMainMenu.sceneIdToLoad, true, true);
+			});
 		}
 		else {
 			Destroy(parentToDestroy);
 		}
-
 	}
 }
