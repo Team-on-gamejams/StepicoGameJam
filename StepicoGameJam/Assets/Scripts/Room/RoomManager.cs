@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Polyglot;
+using TMPro;
 
 public class RoomManager : MonoBehaviour {
 	Room CurrRoom => roomsSequence[currRoomId];
@@ -9,6 +10,10 @@ public class RoomManager : MonoBehaviour {
 	[Header("Sequence"), Space]
 	[SerializeField] List<Room> roomsSequence = new List<Room>();
 	[SerializeField] string winMessageKey = "WIN_MESSAGE";
+	[SerializeField] string objectivesTextKey = "CURRENT_OBJECCTIVES";
+	[SerializeField] string pickupKey = "PICKUPUPGRADE";
+	[SerializeField] string killAllKey = "KILL_ALL";
+	[SerializeField] TextMeshProUGUI objectivesTextField;
 
 	[Header("Upgrader"), Space]
 	[SerializeField] List<GameObject> upgradePrefabs = new List<GameObject>();
@@ -30,6 +35,9 @@ public class RoomManager : MonoBehaviour {
 	}
 
 	public void OnStartNewRoom() {
+		objectivesTextField.text = $"{Localization.Get(objectivesTextKey)}\n" +
+				$" * {Localization.Get(killAllKey)}";
+
 		CurrRoom.gameObject.SetActive(true);
 
 		GameManager.Instance.player.mover.transform.position = CurrRoom.spawnPoint.position;
@@ -41,8 +49,8 @@ public class RoomManager : MonoBehaviour {
 
 	public void OnKillAllEnemies() {
 		if (currRoomId + 1 == roomsSequence.Count) {
-			//TODO:
-			Debug.Log($"{Localization.Get(winMessageKey)}");
+			objectivesTextField.text = $"{Localization.Get(objectivesTextKey)}\n" +
+				$" * {Localization.Get(winMessageKey)}";
 
 			LeanTween.delayedCall(10.0f, () => {
 				SceneLoader.Instance.LoadScene(0, true, true);
@@ -65,8 +73,10 @@ public class RoomManager : MonoBehaviour {
 			}
 
 			++currRoomId;
-			//TODO:
-			Debug.Log($"{string.Format(Localization.Get(CurrRoom.upgradeStringKey), CurrRoom.upgradeValue)}");
+
+			objectivesTextField.text = $"{Localization.Get(objectivesTextKey)}\n" +
+				$" * {string.Format(Localization.Get(CurrRoom.upgradeStringKey), CurrRoom.upgradeValue)}\n" +
+				$" * {Localization.Get(pickupKey)}";
 		}
 	}
 

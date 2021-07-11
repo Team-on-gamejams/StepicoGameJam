@@ -266,12 +266,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerWeapon: 0
   startupTime: 0.5
-  cooldownTime: 1
+  cooldownTime: 0.5
   maxBufferedAttacks: 2
   startSize: 0.33
-  endSize: 1
+  endSize: 2
   damage: 15
-  flySpeed: 7
+  flySpeed: 15
   maxFlyDist: 30
   isPiercing: 0
   projectilePrefab: {fileID: 1283814536103085733, guid: 69285b0127d0c4c4a9ed9f1ccaa9e4fc,
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  maxHealth: 600
+  maxHealth: 1000
   healthBar: {fileID: 6828990554252086298}
   playerHealthUI: {fileID: 0}
   onDieClip: {fileID: 8300000, guid: 2faab91faa8135b4cb38f4ebba2180d0, type: 3}
