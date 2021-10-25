@@ -23,7 +23,7 @@ AB Game Jam it's game jam hosted by Stepico Games online. Is an event where you 
 
 # Credits
  * [Team-on](https://github.com/Team-on) - programmer
- * [Who](LINK) - artist
+ * Shoddy_Shamo - artist
 
 
 # Used tools
