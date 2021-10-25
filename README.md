@@ -1,64 +1,35 @@
-# [GAME_NAME](GAME_LINK)
-Made in X hours for [JAM_NAME](JAM_LINK)  
-Theme: THEME  
-
-Short desc(player should get game genre and USP)
+# [Curse of the savik's room](https://teamon.itch.io/curse-of-the-saviks-room)
+Made in 48 hours for [Stepico Game Jam](https://jam.stepico.com/)  
+Theme: Growth  
 
 ![Cover](Screenshots/ItchioPage/CoverImage.png) 
 
-A bit longer desc. 
-(e.g. Dyson Sphere Program is a sci-fi simulation game with space, adventure, exploration and factory automation elements where you can build your own galactic industrial empire from scratch)
-
-
-# Plot: 
- A quick summary of the story
- (E.g. In the distant future, the power of science and technology has ushered a new age to the human race. Space and time have become irrelevant thanks to virtual reality. A new kind of supercomputer has been developed – a machine whose superior artificial intelligence and computing capability will push humanity even further. There is only one problem: there isn’t enough energy in the whole planet to feed this machine.)
+2d top-down action roguelike where you fight agains room. Can be player with keyboard and mouse or gamepad.
 
 
 # Key features
- * A list of features if your project is a tool or a game
-
-
-# Controls and supported input devices
- * Devices
- * You can play with keyboard or any gamepad
- * Controls
- * WASD - move
- * Mouse - aim
+ * 3 different ranged weapons
+ * Gamepad and keyboard controls
+ * Multilanguage support
+ * 3 enemy types
+ * 1 boss
+ * Player and level progression
+ * 8 hand-designed levels
  
  
-# Cheatcodes
- * Press ` to toggle debug texts
- * Hold ` to open debug console
- * In console write *Help* to see list of commands
-
-
-# How to play
- * Do this to win
- * Do that to lose
- 
- 
-# Tips
- * Tips
- 
- 
-# What is TriJam?
-TriJam is a jam where your goal is to try and make something playable (and fun) in only 3 hours! How is that even possible, you ask? Well, just look at the history of previous TriJams and we're sure you'll be convinced that it is not only possible, but very manageable!  
-Video about TriJam from Rocknight Studios: https://www.youtube.com/watch?v=6PysBXflWdg&ab_channel=RocknightStudios
-
-
-# Diversifiers
- * Share the source code of your project
+# What is Stepico game jam?
+AB Game Jam it's game jam hosted by Stepico Games online. Is an event where you create a game from scratch in a weekend based on a theme.
 
 
 # Credits
  * [Team-on](https://github.com/Team-on) - programmer
- * [Who](LINK) - role
+ * [Who](LINK) - artist
 
 
 # Used tools
  * Unity 2020.2.0f1
  * Visual Studio 2019
+ * Aseprite
  * Adobe Photoshop 2020
  * sfxr
 
