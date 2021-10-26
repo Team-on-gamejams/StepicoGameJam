@@ -129,7 +129,7 @@ MonoBehaviour:
       needGamejolthPush: 0
       needSteamPush: 0
       needGoogleDrivePush: 0
-    - isEnabled: 1
+    - isEnabled: 0
       outputRoot: Builds/
       middlePath: $NAME_$PLATFORM$EXECUTABLE
       dirPathForPostProcess: $NAME_$PLATFORM$EXECUTABLE
@@ -241,7 +241,7 @@ MonoBehaviour:
       needGamejolthPush: 0
       needSteamPush: 0
       needGoogleDrivePush: 0
-    - isEnabled: 1
+    - isEnabled: 0
       outputRoot: Builds/Releases/
       middlePath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
       dirPathForPostProcess: $NAME_$VERSION_$PLATFORM$EXECUTABLE
@@ -353,7 +353,7 @@ MonoBehaviour:
       needGamejolthPush: 0
       needSteamPush: 0
       needGoogleDrivePush: 0
-    - isEnabled: 1
+    - isEnabled: 0
       outputRoot: Builds/Releases/
       middlePath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
       dirPathForPostProcess: $NAME_$VERSION_$PLATFORM$EXECUTABLE
@@ -465,7 +465,7 @@ MonoBehaviour:
       needGamejolthPush: 0
       needSteamPush: 0
       needGoogleDrivePush: 0
-    - isEnabled: 1
+    - isEnabled: 0
       outputRoot: Builds/Releases/
       middlePath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
       dirPathForPostProcess: $NAME_$VERSION_$PLATFORM$EXECUTABLE
@@ -577,7 +577,7 @@ MonoBehaviour:
       needGamejolthPush: 0
       needSteamPush: 0
       needGoogleDrivePush: 0
-    - isEnabled: 1
+    - isEnabled: 0
       outputRoot: Builds/Releases/
       middlePath: $NAME_$VERSION_$PLATFORM$EXECUTABLE
       dirPathForPostProcess: $NAME_$VERSION_$PLATFORM$EXECUTABLE

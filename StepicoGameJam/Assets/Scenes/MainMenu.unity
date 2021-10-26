@@ -724,6 +724,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 818695053737393662, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_text
+      value: 'Artist: Shoddy_Shamo'
+      objectReference: {fileID: 0}
     - target: {fileID: 819609100172755562, guid: 390f8f2827c469646aa52fffde920581,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1248,6 +1253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714990020724357755, guid: 390f8f2827c469646aa52fffde920581,
+        type: 3}
+      propertyPath: m_text
+      value: This is a prototype made in 48 hours for Stepico Game Jam.
       objectReference: {fileID: 0}
     - target: {fileID: 8331742706522702811, guid: 390f8f2827c469646aa52fffde920581,
         type: 3}
